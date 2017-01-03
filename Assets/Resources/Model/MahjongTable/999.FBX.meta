@@ -1,0 +1,412 @@
+fileFormatVersion: 2
+guid: a57af8d589587254b8813bee3f2a1a77
+timeCreated: 1480748446
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Box04
+    100004: Box1578988
+    100006: Box1578989
+    100008: Box1578990
+    100010: Box1578991
+    100012: Box30
+    100014: Box31
+    100016: Box32
+    100018: Box33
+    100020: Box34
+    100022: Box35
+    100024: Box36
+    100026: Box37
+    100028: Box38
+    100030: Box39
+    100032: Box40
+    100034: Box41
+    100036: Box42
+    100038: Box43
+    100040: Box44
+    100042: Box45
+    100044: ChamferBox01
+    100046: ChamferBox02
+    100048: ChamferBox03
+    100050: ChamferBox04
+    100052: ChamferBox05
+    100054: ChamferBox83
+    100056: ChamferBox84
+    100058: ChamferBox85
+    100060: ChamferBox86
+    100062: Circle01
+    100064: Circle02
+    100066: Circle03
+    100068: Circle04
+    100070: Circle05
+    100072: Circle06
+    100074: Circle07
+    100076: Circle08
+    100078: Cylinder01
+    100080: Cylinder02
+    100082: Cylinder03
+    100084: Cylinder04
+    100086: Display 01
+    100088: Display 01 1
+    100090: Display 01 2
+    100092: Display 01 3
+    100094: Display 01 4
+    100096: Display 01 5
+    100098: Event 01
+    100100: Event 01 1
+    100102: Event 01 2
+    100104: Event 01 3
+    100106: Event 01 4
+    100108: Event 01 5
+    100110: Group1421666767
+    100112: Line01
+    100114: Particle View 01
+    100116: Particle View 01 1
+    100118: Particle View 01 10
+    100120: Particle View 01 11
+    100122: Particle View 01 2
+    100124: Particle View 01 3
+    100126: Particle View 01 4
+    100128: Particle View 01 5
+    100130: Particle View 01 6
+    100132: Particle View 01 7
+    100134: Particle View 01 8
+    100136: Particle View 01 9
+    100138: Rectangle02
+    100140: Rectangle03
+    100142: Rectangle04
+    100144: Rectangle29
+    100146: Rectangle30
+    100148: Rectangle31
+    100150: Rectangle32
+    100152: Rectangle33
+    100154: Rectangle34
+    100156: Rectangle35
+    100158: Rectangle36
+    100160: Rectangle37
+    100162: Render 01
+    100164: Render 01 1
+    100166: Render 01 2
+    100168: Render 01 3
+    100170: Render 01 4
+    100172: Render 01 5
+    100174: "\u9EBB\u5C06\u684C-3D\u4FA0\u5957\u88C5\u6A21\u578B"
+    400000: //RootNode
+    400002: Box04
+    400004: Box1578988
+    400006: Box1578989
+    400008: Box1578990
+    400010: Box1578991
+    400012: Box30
+    400014: Box31
+    400016: Box32
+    400018: Box33
+    400020: Box34
+    400022: Box35
+    400024: Box36
+    400026: Box37
+    400028: Box38
+    400030: Box39
+    400032: Box40
+    400034: Box41
+    400036: Box42
+    400038: Box43
+    400040: Box44
+    400042: Box45
+    400044: ChamferBox01
+    400046: ChamferBox02
+    400048: ChamferBox03
+    400050: ChamferBox04
+    400052: ChamferBox05
+    400054: ChamferBox83
+    400056: ChamferBox84
+    400058: ChamferBox85
+    400060: ChamferBox86
+    400062: Circle01
+    400064: Circle02
+    400066: Circle03
+    400068: Circle04
+    400070: Circle05
+    400072: Circle06
+    400074: Circle07
+    400076: Circle08
+    400078: Cylinder01
+    400080: Cylinder02
+    400082: Cylinder03
+    400084: Cylinder04
+    400086: Display 01
+    400088: Display 01 1
+    400090: Display 01 2
+    400092: Display 01 3
+    400094: Display 01 4
+    400096: Display 01 5
+    400098: Event 01
+    400100: Event 01 1
+    400102: Event 01 2
+    400104: Event 01 3
+    400106: Event 01 4
+    400108: Event 01 5
+    400110: Group1421666767
+    400112: Line01
+    400114: Particle View 01
+    400116: Particle View 01 1
+    400118: Particle View 01 10
+    400120: Particle View 01 11
+    400122: Particle View 01 2
+    400124: Particle View 01 3
+    400126: Particle View 01 4
+    400128: Particle View 01 5
+    400130: Particle View 01 6
+    400132: Particle View 01 7
+    400134: Particle View 01 8
+    400136: Particle View 01 9
+    400138: Rectangle02
+    400140: Rectangle03
+    400142: Rectangle04
+    400144: Rectangle29
+    400146: Rectangle30
+    400148: Rectangle31
+    400150: Rectangle32
+    400152: Rectangle33
+    400154: Rectangle34
+    400156: Rectangle35
+    400158: Rectangle36
+    400160: Rectangle37
+    400162: Render 01
+    400164: Render 01 1
+    400166: Render 01 2
+    400168: Render 01 3
+    400170: Render 01 4
+    400172: Render 01 5
+    400174: "\u9EBB\u5C06\u684C-3D\u4FA0\u5957\u88C5\u6A21\u578B"
+    2300000: Box04
+    2300002: Box1578988
+    2300004: Box1578989
+    2300006: Box1578990
+    2300008: Box1578991
+    2300010: Box30
+    2300012: Box31
+    2300014: Box32
+    2300016: Box33
+    2300018: Box34
+    2300020: Box35
+    2300022: Box36
+    2300024: Box37
+    2300026: Box38
+    2300028: Box39
+    2300030: Box40
+    2300032: Box41
+    2300034: Box42
+    2300036: Box43
+    2300038: Box44
+    2300040: Box45
+    2300042: ChamferBox01
+    2300044: ChamferBox02
+    2300046: ChamferBox03
+    2300048: ChamferBox04
+    2300050: ChamferBox05
+    2300052: ChamferBox83
+    2300054: ChamferBox84
+    2300056: ChamferBox85
+    2300058: ChamferBox86
+    2300060: Circle01
+    2300062: Circle02
+    2300064: Circle03
+    2300066: Circle04
+    2300068: Circle05
+    2300070: Circle06
+    2300072: Circle07
+    2300074: Circle08
+    2300076: Cylinder01
+    2300078: Cylinder02
+    2300080: Cylinder03
+    2300082: Cylinder04
+    2300084: Line01
+    2300086: Rectangle02
+    2300088: Rectangle03
+    2300090: Rectangle04
+    2300092: Rectangle29
+    2300094: Rectangle30
+    2300096: Rectangle31
+    2300098: Rectangle32
+    2300100: Rectangle33
+    2300102: Rectangle34
+    2300104: Rectangle35
+    2300106: Rectangle36
+    2300108: Rectangle37
+    3300000: Box04
+    3300002: Box1578988
+    3300004: Box1578989
+    3300006: Box1578990
+    3300008: Box1578991
+    3300010: Box30
+    3300012: Box31
+    3300014: Box32
+    3300016: Box33
+    3300018: Box34
+    3300020: Box35
+    3300022: Box36
+    3300024: Box37
+    3300026: Box38
+    3300028: Box39
+    3300030: Box40
+    3300032: Box41
+    3300034: Box42
+    3300036: Box43
+    3300038: Box44
+    3300040: Box45
+    3300042: ChamferBox01
+    3300044: ChamferBox02
+    3300046: ChamferBox03
+    3300048: ChamferBox04
+    3300050: ChamferBox05
+    3300052: ChamferBox83
+    3300054: ChamferBox84
+    3300056: ChamferBox85
+    3300058: ChamferBox86
+    3300060: Circle01
+    3300062: Circle02
+    3300064: Circle03
+    3300066: Circle04
+    3300068: Circle05
+    3300070: Circle06
+    3300072: Circle07
+    3300074: Circle08
+    3300076: Cylinder01
+    3300078: Cylinder02
+    3300080: Cylinder03
+    3300082: Cylinder04
+    3300084: Line01
+    3300086: Rectangle02
+    3300088: Rectangle03
+    3300090: Rectangle04
+    3300092: Rectangle29
+    3300094: Rectangle30
+    3300096: Rectangle31
+    3300098: Rectangle32
+    3300100: Rectangle33
+    3300102: Rectangle34
+    3300104: Rectangle35
+    3300106: Rectangle36
+    3300108: Rectangle37
+    4300000: Box1578988
+    4300002: ChamferBox83
+    4300004: Box1578989
+    4300006: ChamferBox84
+    4300008: Circle03
+    4300010: Box04
+    4300012: Rectangle32
+    4300014: Rectangle33
+    4300016: Box44
+    4300018: Box45
+    4300020: Box30
+    4300022: Box31
+    4300024: Box32
+    4300026: Box33
+    4300028: Box34
+    4300030: Box35
+    4300032: Box36
+    4300034: Box37
+    4300036: Box38
+    4300038: Box39
+    4300040: Box40
+    4300042: Box41
+    4300044: ChamferBox01
+    4300046: Box43
+    4300048: Line01
+    4300050: Circle08
+    4300052: Circle07
+    4300054: Circle06
+    4300056: Circle05
+    4300058: Circle04
+    4300060: Circle02
+    4300062: Circle01
+    4300064: Box42
+    4300066: Rectangle02
+    4300068: Rectangle03
+    4300070: ChamferBox02
+    4300072: Rectangle04
+    4300074: Cylinder01
+    4300076: Rectangle35
+    4300078: Cylinder02
+    4300080: ChamferBox03
+    4300082: Rectangle36
+    4300084: Cylinder03
+    4300086: ChamferBox04
+    4300088: Cylinder04
+    4300090: Rectangle37
+    4300092: ChamferBox05
+    4300094: Rectangle31
+    4300096: Rectangle30
+    4300098: Rectangle34
+    4300100: Rectangle29
+    4300102: ChamferBox85
+    4300104: Box1578990
+    4300106: ChamferBox86
+    4300108: Box1578991
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

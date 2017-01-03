@@ -22,10 +22,12 @@ public class MyPlayer {
     /// 手牌List
     /// </summary>
     private int[] brands = new int[20];
+
     /// <summary>
     /// 手牌大小
     /// </summary>
     private int size = 0;
+
     /// <summary>
     /// 特殊操作牌
     /// </summary>
@@ -45,6 +47,11 @@ public class MyPlayer {
     /// 吃牌记录
     /// </summary>
     private int[] chi = new int[4];
+
+    /// <summary>
+    /// 听牌标记数组
+    /// </summary>
+    private int[] TingBJ = new int[20];
 
     /// <summary>
     /// 获得手牌数目
@@ -77,6 +84,11 @@ public class MyPlayer {
             {
                 int num = i * 10 + j;
 
+                for (int k = 0; i < 20; k++)
+                {
+                    TingBJ[k] = 0;
+                }
+
                 Ting(num);
             }
         }
@@ -97,13 +109,65 @@ public class MyPlayer {
             {
                 bo = true;
             }
-            if (i <= size - 2)
-            {
-                if (T[i] == T[i + 1] && T[i + 1] == T[i + 2])
+        }
+
+        BFSFG(1);
+
+    }
+
+    /// <summary>
+    /// 分割手牌
+    /// </summary>
+    public bool BFSFG(int num)
+    {
+        switch (num)
+        {
+            case 1: //分割雀头
+                for (int i = 0; i < size; i++)
                 {
-                    bo = true;
+                    if (brands[i] == brands[i + 1])
+                    {
+                        TingBJ[i] = 1;
+                        TingBJ[i + 1] = 1;
+                        BFSFG(2);
+                        TingBJ[i] = 0;
+                        TingBJ[i + 1] = 0;
+                    }
                 }
-            }
+                break;
+            case 2: //分割碰牌
+                for (int i = 0; i < size - 1; i++)
+                {
+                    if (TingBJ[i] == 0)
+                    {
+                        if (brands[i] == brands[i + 1] && brands[i + 1] == brands[i + 2])
+                        {
+                            TingBJ[i] = 2;
+                            TingBJ[i + 1] = 2;
+                            TingBJ[i + 2] = 2;
+                        }
+                    }
+                }
+                BFSFG(3);
+                for (int i = 0; i <= size; i++)
+                    if (TingBJ[i] == 2) TingBJ[i] = 0;
+                break;
+            case 3: //分割吃牌
+                for (int i = 0; i < size; i++)
+                {
+                    if (TingBJ[i] == 0)
+                    {
+                        int p = brands[i];
+                        for (int j = i + 1; j <= size; j++)
+                        {
+                            int p2 = p;
+                            if (p2 + 1 == brands[j])
+                                p2 += 1;
+                            if (p2 - p == 2) 
+                        }
+                    }
+                }
+                break;
         }
     }
 
