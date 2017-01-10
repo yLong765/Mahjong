@@ -19,7 +19,7 @@ public class TBrand : MonoBehaviour{
 
     public void OnClickShow()
     {
-        Destroy(this);
+        Destroy(gameObject);
     }
 
 }

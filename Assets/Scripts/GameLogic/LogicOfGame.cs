@@ -60,12 +60,15 @@ public class LogicOfGame {
         Vector3 pos = new Vector3(-3.95f, 0.5f, -3.5f);
         Vector3 rot = new Vector3(0, 0, -90);
         Vector3 sca = new Vector3(1.5f, 1.5f, 1.5f);
+
+        MyPlayer.Instance.Sort();
+
         for (int i = 0; i < 13; i++)
         {
-            //int brand = MyPlayer.Instance.GetBrand(i);
-            GameObject gb = ResourceMgr.Instance.CreateGameObject("Mahjong/mj32", true);
+            int brand = MyPlayer.Instance.Get(i);
+            GameObject gb = ResourceMgr.Instance.CreateGameObject("Mahjong/mj" + brand, true);
             pos.x += 0.45f;
-            gb.name = "32";
+            gb.name = brand.ToString();
             gb.transform.localPosition = pos;
             gb.transform.localRotation = Quaternion.Euler(rot);
             gb.transform.localScale = sca;
@@ -110,7 +113,7 @@ public class LogicOfGame {
     /// <summary>
     /// 发牌
     /// </summary>
-    public void Deal()
+    public void Deal(int num)
     {
         //NetWriter.SetUrl("127.0.0.1:9001");
         //Net.Instance.Send(2003, CallBack, null);
@@ -124,7 +127,8 @@ public class LogicOfGame {
 
         pos.x += 0.45f * 13 + 0.7f;
 
-        GameObject gb = ResourceMgr.Instance.CreateGameObject("Mahjong/mj34", true);
+        GameObject gb = ResourceMgr.Instance.CreateGameObject("Mahjong/mj" + num, true);
+        gb.name = num.ToString();
         gb.transform.localPosition = pos;
         gb.transform.localRotation = Quaternion.Euler(rot);
         gb.transform.localScale = sca;
@@ -151,7 +155,9 @@ public class LogicOfGame {
         }
         else if (LastObject != null)
         {
-            gb.GetComponent<TBrand>().Down();
+            LastObject.GetComponent<TBrand>().Down();
+            gb.GetComponent<TBrand>().OnClickUp();
+            LastObject = gb;
         }
         else
         {

@@ -9,7 +9,7 @@ public class FlowOfGame : MonoBehaviour {
     void Start()
     {
         isHandDeal = true;
-        isDeal = true;
+        isDeal = false;
         Invoke("Init", 1f);
     }
 
@@ -25,13 +25,15 @@ public class FlowOfGame : MonoBehaviour {
     private void InitHandDeal()
     {
         LogicOfGame.Instance.HandDeal();
+        isDeal = true;
     }
 
     void Update()
     {
         if (isDeal)
         {
-            LogicOfGame.Instance.Deal();
+            LogicOfGame.Instance.Deal(18);
+            LogicOfGame.Instance.ShowOperation(18);
             isDeal = false;
         }
     }

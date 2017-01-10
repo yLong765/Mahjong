@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\UI\SceneUI\SceneLogin.cs" />
      <Compile Include="Assets\Scripts\UI\SceneUI\SceneRoom.cs" />
      <Compile Include="Assets\Scripts\UI\UItest.cs" />
+     <Compile Include="Assets\Scripts\WebLogic\WebLogic.cs" />
      <Compile Include="Assets\Scut\Action\Action2000.cs" />
      <Compile Include="Assets\Scut\Action\Action2001.cs" />
      <Compile Include="Assets\Scut\Action\Action2002.cs" />

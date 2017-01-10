@@ -26,4 +26,6 @@ public class GameSetting
     public string roomName = "";
     public int NowPlayer = 0;
 
+    public bool CanSend = false;
+
 }
