@@ -28,16 +28,17 @@ public class SceneInRoom : SceneBase {
         roomName = skin.transform.Find("roomName").GetComponent<Text>();
     }
 
-    protected override void OnUpdate()
+    protected override bool Event(ActionParam param)
     {
-        if (GameSetting.Instance.RoomData)
+        Debug.Log("InRoom");
+        int id = (int)param["ActionType"];
+        if (id == (int)ActionType.RoomMessageRadioResult)
         {
-            GameSetting.Instance.RoomData = false;
             playernum = 0;
-            UpdateData(0, GameSetting.Instance.player1);
-            UpdateData(1, GameSetting.Instance.player2);
-            UpdateData(2, GameSetting.Instance.player3);
-            UpdateData(3, GameSetting.Instance.player4);
+            UpdateData(0, (string)param["player1"]);
+            UpdateData(1, (string)param["player2"]);
+            UpdateData(2, (string)param["player3"]);
+            UpdateData(3, (string)param["player4"]);
             roomName.text = "房间:" + GameSetting.Instance.roomName;
             if (playernum == 4)
             {
@@ -46,6 +47,8 @@ public class SceneInRoom : SceneBase {
                 Invoke("Switch", 2f);
             }
         }
+
+        return false;
     }
 
     int playernum = 0;

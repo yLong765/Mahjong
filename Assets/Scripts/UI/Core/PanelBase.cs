@@ -5,6 +5,7 @@ public class PanelBase : UIBase {
 
     public virtual void OnInit()
     {
+        WebLogic.Instance.AddEventListener(1, this);
         Init();
     }
 

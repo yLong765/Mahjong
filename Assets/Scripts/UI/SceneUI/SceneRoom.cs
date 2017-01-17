@@ -25,14 +25,14 @@ public class SceneRoom : SceneBase {
         ActionParam param = new ActionParam();
         param["roomID"] = roomID;
 
-        Net.Instance.Send(2006, callback, param);
+        WebLogic.Instance.Send((int)ActionType.RoomMessage, param);
     }
 
     protected override void onClick(GameObject BtObject)
     {
         if (BtObject.name.Equals("joinBt"))
         {
-            Debug.Log("Join");
+            Debug.Log("join");
         }
         if (BtObject.name.Equals("createBt"))
         {
@@ -48,25 +48,33 @@ public class SceneRoom : SceneBase {
             param["roomName"] = roomName;
             param["roomOperation"] = 1;
 
-            Net.Instance.Send((int)ActionType.Room, JoinCallBack, param);
+            WebLogic.Instance.Send((int)ActionType.Room, param);
 
         }
     }
 
-    private void JoinCallBack(ActionResult actionResult)
+    protected override bool Event(ActionParam param)
     {
-        if (actionResult.Get<int>("callback") != -1)
+        Debug.Log("Room");
+        int id = (int)param["ActionType"];
+
+        switch (id)
         {
-            GameSetting.Instance.roomID = actionResult.Get<int>("callback");
-            SceneMgr.Instance.SceneSwitch(SceneState.SceneInRoom);
+            case (int)ActionType.Room:
+                if ((int)param["success"] != -1)
+                {
+                    GameSetting.Instance.roomID = (int)param["callback"];
+                    SceneMgr.Instance.SceneSwitch(SceneState.SceneInRoom);
+                }
+                break;
+            case (int)ActionType.RoomMessage:
+                string roomName = (string)param["Name"];
+                int size = (int)param["Size"];
+                CreateRoom(roomName, size);
+                break;
         }
-    }
 
-    private void callback(ActionResult actionResult)
-    {
-        string roomName = actionResult.Get<string>("roomName");
-        int size = actionResult.Get<int>("size");
-        CreateRoom(roomName,size);
+        return false;
     }
 
     private void CreateRoom(string roomName, int size)
@@ -90,7 +98,8 @@ public class SceneRoom : SceneBase {
         {
             ActionParam param = new ActionParam();
             param["roomID"] = roomID;
-            Net.Instance.Send(2006, callback, param);
+
+            WebLogic.Instance.Send((int)ActionType.RoomMessage, param);
         }
     }
 

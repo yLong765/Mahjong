@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
-public class SceneBase : UIBase {
+public class SceneBase : UIBase, IEventListener {
 
     public virtual void OnInit()
     {
+        WebLogic.Instance.AddEventListener(1, this);
         Init();
     }
 

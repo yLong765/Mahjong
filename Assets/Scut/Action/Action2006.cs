@@ -4,10 +4,11 @@ using System;
 
 public class Action2006 : BaseAction
 {
-    ActionResult actionResult;
+    ActionResult actionResult = new ActionResult();
 
     public Action2006() : base((int)ActionType.RoomMessage)
     {
+        actionResult["ActionType"] = (int)ActionType.RoomMessage;
     }
 
     public override ActionResult GetResponseData()
@@ -17,9 +18,8 @@ public class Action2006 : BaseAction
 
     protected override void DecodePackage(NetReader reader)
     {
-        actionResult = new ActionResult();
-        actionResult["roomName"] = reader.readString();
-        actionResult["size"] = reader.getInt();
+        actionResult["Name"] = reader.readString();
+        actionResult["Size"] = reader.getInt();
     }
 
     protected override void SendParameter(NetWriter writer, ActionParam actionParam)

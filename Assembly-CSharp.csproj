@@ -47,6 +47,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera\CameraCore.cs" />
+     <Compile Include="Assets\Scripts\EEEE.cs" />
+     <Compile Include="Assets\Scripts\Event\EventNode.cs" />
+     <Compile Include="Assets\Scripts\Event\EventType.cs" />
+     <Compile Include="Assets\Scripts\Event\IEventListener.cs" />
      <Compile Include="Assets\Scripts\GameLogic\FlowOfGame.cs" />
      <Compile Include="Assets\Scripts\GameLogic\LogicOfGame.cs" />
      <Compile Include="Assets\Scripts\GameLogic\Mouse.cs" />
@@ -54,8 +58,10 @@
      <Compile Include="Assets\Scripts\GameLogic\TBrand.cs" />
      <Compile Include="Assets\Scripts\GameStart.cs" />
      <Compile Include="Assets\Scripts\ResourceMgr\ResourceMgr.cs" />
+     <Compile Include="Assets\Scripts\SSSS.cs" />
      <Compile Include="Assets\Scripts\Scene\Core\SceneManager.cs" />
      <Compile Include="Assets\Scripts\Scene\Core\SceneType.cs" />
+     <Compile Include="Assets\Scripts\TTTT.cs" />
      <Compile Include="Assets\Scripts\Test.cs" />
      <Compile Include="Assets\Scripts\UI\Core\PanelBase.cs" />
      <Compile Include="Assets\Scripts\UI\Core\PanelMgr.cs" />
@@ -69,14 +75,16 @@
      <Compile Include="Assets\Scripts\UI\SceneUI\SceneLogin.cs" />
      <Compile Include="Assets\Scripts\UI\SceneUI\SceneRoom.cs" />
      <Compile Include="Assets\Scripts\UI\UItest.cs" />
+     <Compile Include="Assets\Scripts\WebLogic\WebBase.cs" />
      <Compile Include="Assets\Scripts\WebLogic\WebLogic.cs" />
+     <Compile Include="Assets\Scripts\llll.cs" />
      <Compile Include="Assets\Scut\Action\Action2000.cs" />
      <Compile Include="Assets\Scut\Action\Action2001.cs" />
      <Compile Include="Assets\Scut\Action\Action2002.cs" />
-     <Compile Include="Assets\Scut\Action\Action2003.cs" />
-     <Compile Include="Assets\Scut\Action\Action2004.cs" />
      <Compile Include="Assets\Scut\Action\Action2005.cs" />
      <Compile Include="Assets\Scut\Action\Action2006.cs" />
+     <Compile Include="Assets\Scut\Action\Action3000.cs" />
+     <Compile Include="Assets\Scut\Action\Action3001.cs" />
      <Compile Include="Assets\Scut\Action\ActionType.cs" />
      <Compile Include="Assets\Scut\Action\BaseAction.cs" />
      <Compile Include="Assets\Scut\ActionFactory.cs" />

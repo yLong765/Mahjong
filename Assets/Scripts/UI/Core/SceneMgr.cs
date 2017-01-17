@@ -43,7 +43,6 @@ public class SceneMgr {
 
         if (pervious != null)
         {
-
             UnityEngine.Object.Destroy(pervious);
         }
         pervious = scene;

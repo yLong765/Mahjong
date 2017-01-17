@@ -4,10 +4,11 @@ using System;
 
 public class Action2005 : BaseAction
 {
-    ActionResult actionResult;
+    ActionResult actionResult = new ActionResult();
 
     public Action2005() : base((int)ActionType.Login)
     {
+        actionResult["ActionType"] = (int)ActionType.Login;
     }
 
     public override ActionResult GetResponseData()
@@ -17,8 +18,7 @@ public class Action2005 : BaseAction
 
     protected override void DecodePackage(NetReader reader)
     {
-        actionResult = new ActionResult();
-        actionResult["isSwitch"] = reader.getInt();
+        actionResult["success"] = reader.getInt();
     }
 
     protected override void SendParameter(NetWriter writer, ActionParam actionParam)

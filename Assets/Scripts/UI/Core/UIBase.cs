@@ -2,8 +2,9 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
+using System;
 
-public class UIBase : MonoBehaviour {
+public class UIBase : MonoBehaviour, IEventListener {
 
     /// <summary>
     /// 皮肤对象
@@ -58,6 +59,10 @@ public class UIBase : MonoBehaviour {
     #region 虚方法
 
     /// <summary>
+    /// 发送消息
+    /// </summary>
+    protected virtual void Send() { }
+    /// <summary>
     /// 初始化数据
     /// </summary>
     protected virtual void OnInitData() { }
@@ -92,6 +97,13 @@ public class UIBase : MonoBehaviour {
         skin.transform.localScale = Vector3.one;
     }
 
+    protected virtual bool Event(ActionParam param) { return false; }
+
     #endregion
+
+    public bool HandleEvent(int id, ActionParam param)
+    {
+        return Event(param);
+    }
 
 }

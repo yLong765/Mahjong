@@ -27,7 +27,7 @@ public class PanelCreateRoom : PanelBase {
             param["roomName"] = roomName.text;
             param["roomOperation"] = 1;
 
-            Net.Instance.Send(2000, callback, param);
+            WebLogic.Instance.Send((int)ActionType.Room, param);
         }
         if (BtObject.name.Equals("cancleBt") || BtObject.name.Equals("OtherPanel"))
         {
@@ -38,19 +38,27 @@ public class PanelCreateRoom : PanelBase {
         }
     }
 
-    private void callback(ActionResult actionResult)
+    protected override bool Event(ActionParam param)
     {
-        int b = -1;
-        if ((b = (int)actionResult["callback"]) != -1)
+        Debug.Log("PanelCreateRoom");
+        int id = (int)param["ActionType"];
+
+        if (id == (int)ActionType.Room)
         {
-            
-            GameSetting.Instance.roomID = b;
-            XzoomTween x = GetComponentInChildren<XzoomTween>();
-            x.isBig = false;
-            x.isSmall = true;
-            Destroy(gameObject, 1f);
-            SceneMgr.Instance.SceneSwitch(SceneState.SceneInRoom);
+            int b = -1;
+            if ((b = (int)param["success"]) != -1)
+            {
+                GameSetting.Instance.roomID = b;
+                GameSetting.Instance.roomName = roomName.text;
+                XzoomTween x = GetComponentInChildren<XzoomTween>();
+                x.isBig = false;
+                x.isSmall = true;
+                Destroy(gameObject, 1f);
+                SceneMgr.Instance.SceneSwitch(SceneState.SceneInRoom);
+            }
         }
+
+        return false;
     }
 
 }

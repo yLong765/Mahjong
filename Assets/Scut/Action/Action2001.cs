@@ -4,10 +4,11 @@ using System;
 
 public class Action2001 : BaseAction
 {
-    private ActionResult actionResult;
+    private ActionResult actionResult = new ActionResult();
 
     public Action2001() : base((int)ActionType.Logic)
     {
+        actionResult["ActionType"] = (int)ActionType.Logic;
     }
 
     public override ActionResult GetResponseData()
@@ -17,7 +18,6 @@ public class Action2001 : BaseAction
 
     protected override void DecodePackage(NetReader reader)
     {
-        actionResult = new ActionResult();
         actionResult["brand"] = reader.getInt();
     }
 

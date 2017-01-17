@@ -5,10 +5,11 @@ using System;
 public class Action2000 : BaseAction
 {
 
-    private ActionResult actionResult;
+    private ActionResult actionResult = new ActionResult();
 
     public Action2000() : base((int)ActionType.Room)
     {
+        actionResult["ActionType"] = (int)ActionType.Room;
     }
 
     public override ActionResult GetResponseData()
@@ -18,16 +19,7 @@ public class Action2000 : BaseAction
 
     protected override void DecodePackage(NetReader reader)
     {
-        actionResult = new ActionResult();
-        int b = 0;
-        if ((b = reader.getInt()) == 0)
-        {
-            actionResult["callback"] = -1;
-        }
-        else
-        {
-            actionResult["callback"] = b;
-        }
+        actionResult["success"] = reader.getInt();
     }
 
     protected override void SendParameter(NetWriter writer, ActionParam actionParam)

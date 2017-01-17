@@ -2,12 +2,13 @@
 using System.Collections;
 using System;
 
-public class Action2003 : BaseAction
+public class Action3000 : BaseAction
 {
-    private ActionResult actionResult;
+    private ActionResult actionResult = new ActionResult();
 
-    public Action2003() : base((int)ActionType.brandRadioResult)
+    public Action3000() : base((int)ActionType.brandRadioResult)
     {
+        actionResult["ActionType"] = (int)ActionType.brandRadioResult;
     }
 
     public override ActionResult GetResponseData()

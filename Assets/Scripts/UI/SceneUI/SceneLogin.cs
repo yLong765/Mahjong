@@ -6,7 +6,6 @@ public class SceneLogin : SceneBase {
     private InputField UserName;
     private InputField PassWord;
 
-
     public override void OnInit()
     {
         setSkinPath("UI/Scenes/" + SceneState.SceneLogin.ToString());
@@ -27,26 +26,31 @@ public class SceneLogin : SceneBase {
             param["UserName"] = UserName.text;
             param["PassWord"] = PassWord.text;
 
-            Net.Instance.Send(2005, callback, param);
+            WebLogic.Instance.Send((int)ActionType.Login, param);
         }
     }
 
-    private void callback(ActionResult actionResult)
+    protected override bool Event(ActionParam param)
     {
-        int s = actionResult.Get<int>("isSwitch");
-        if (s == 1) Swith(true); else Swith(false);
-    }
+        Debug.Log("Login");
+        int id = (int)param["ActionType"];
 
-    private void Swith(bool admit)
-    {
-        if (admit)
+        if (id == (int)ActionType.Login)
         {
-            SceneMgr.Instance.SceneSwitch(SceneState.SceneRoom);
+            int admit = (int)param["success"];
+
+            switch (admit)
+            {
+                case 1: //登陆成功
+                    SceneMgr.Instance.SceneSwitch(SceneState.SceneRoom);
+                    break;
+                default:
+                    Debug.LogError("用户名密码错误");
+                    break;
+            }
         }
-        else 
-        {
-            Debug.LogError("用户名密码错误");
-        }
+
+        return false;
     }
 
 }
