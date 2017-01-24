@@ -63,7 +63,7 @@ public class SceneRoom : SceneBase {
             case (int)ActionType.Room:
                 if ((int)param["success"] != -1)
                 {
-                    GameSetting.Instance.roomID = (int)param["callback"];
+                    GameSetting.Instance.roomID = (int)param["success"];
                     SceneMgr.Instance.SceneSwitch(SceneState.SceneInRoom);
                 }
                 break;

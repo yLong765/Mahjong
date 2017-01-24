@@ -23,6 +23,6 @@ public class Action2002 : BaseAction
     {
         writer.writeInt32("roomID", (int)actionParam["roomID"]);
         writer.writeInt32("brand", (int)actionParam["brand"]);
-        writer.writeInt32("brandPos", (int)actionParam["brandPos"]);
+        writer.writeInt32("playerId", (int)actionParam["playerId"]);
     }
 }

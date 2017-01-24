@@ -39,27 +39,27 @@ public class SceneGame : SceneBase {
     {
         if (BtObject.name.Equals("Chi"))
         {
-            
+            LogicOfGame.Instance.ChangeChi();
         }
         else if (BtObject.name.Equals("Peng"))
         {
-
+            LogicOfGame.Instance.RespondOperation(2);
         }
         else if (BtObject.name.Equals("Gang"))
         {
-            
+            LogicOfGame.Instance.RespondOperation(3);
         }
         else if (BtObject.name.Equals("Ting"))
         {
-
+            LogicOfGame.Instance.RespondOperation(4);
         }
         else if (BtObject.name.Equals("Hu"))
         {
-
+            LogicOfGame.Instance.RespondOperation(5);
         }
         else if (BtObject.name.Equals("Guo"))
         {
-
+            LogicOfGame.Instance.RespondOperation(0);
         }
     }
 

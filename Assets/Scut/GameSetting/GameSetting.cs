@@ -24,7 +24,7 @@ public class GameSetting
     public string player3 = "1";
     public string player4 = "1";
     public string roomName = "";
-    public int NowPlayer = 0;
+    public int Playerid;
 
     public bool CanSend = false;
 

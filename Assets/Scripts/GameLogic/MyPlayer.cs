@@ -1,6 +1,6 @@
-﻿using UnityEngine;
-using System.Collections;
-using System;
+﻿using System;
+using UnityEngine;
+using System.Collections.Generic;
 
 public class MyPlayer {
 
@@ -24,6 +24,11 @@ public class MyPlayer {
     private int[] brands = new int[20];
 
     /// <summary>
+    /// 手牌Ob
+    /// </summary>
+    private Dictionary<int, GameObject> brandsGB = new Dictionary<int, GameObject>();
+
+    /// <summary>
     /// 手牌大小
     /// </summary>
     private int size = 0;
@@ -36,17 +41,17 @@ public class MyPlayer {
     /// <summary>
     /// 碰牌记录
     /// </summary>
-    private int[] peng = new int[2];
+    public int[] peng = new int[2];
 
     /// <summary>
     /// 杠牌记录
     /// </summary>
-    private int[] gang = new int[3];
+    public int[] gang = new int[3];
 
     /// <summary>
     /// 吃牌记录
     /// </summary>
-    private int[] chi = new int[4];
+    public int[] chi = new int[4];
 
     /// <summary>
     /// 听牌记录数组大小
@@ -137,17 +142,6 @@ public class MyPlayer {
         CanTing = false;
 
         Array.Sort(T, 0, size + 1);
-
-        bool bo = false;
-
-        for (int i = 0; i < size; i++)
-        {
-            if (T[i] == 0 || T[i] == 8 || T[i] == 10 || T[i] == 18 || T[i] == 20 || T[i] == 28 || T[i] == 34)
-            {
-                bo = true;
-            }
-            if (!bo) return bo;
-        }
 
         BFSFG(1);
 
@@ -297,6 +291,7 @@ public class MyPlayer {
         {
             chi[i] = -1;
         }
+
         for (int i = 0; i < size; i++)
         {
             if (brands[i] == num - 2)
@@ -314,7 +309,7 @@ public class MyPlayer {
             if (brands[i] == num + 2)
             {
                 chi[3] = i;
-                if (chi[1] != -1) p = true;
+                if (chi[2] != -1) p = true;
             }
         }
         return p;
@@ -355,6 +350,34 @@ public class MyPlayer {
     {
         brands[size] = num;
         size++;
+    }
+
+    /// <summary>
+    /// 添加手牌物体
+    /// </summary>
+    /// <param name="num"></param>
+    /// <param name="ob"></param>
+    public void AddOb(int num, GameObject ob)
+    {
+        if (!brandsGB.ContainsKey(num))
+        {
+            brandsGB.Add(num, ob);
+        }
+        else
+        {
+            brandsGB.Remove(num);
+            brandsGB.Add(num, ob);
+        }
+    }
+
+    /// <summary>
+    /// 返回指定位置手牌物体
+    /// </summary>
+    /// <param name="num"></param>
+    /// <returns></returns>
+    public GameObject GetOb(int num)
+    {
+        return brandsGB[num];
     }
 
     /// <summary>

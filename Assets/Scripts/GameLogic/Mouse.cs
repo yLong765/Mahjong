@@ -6,6 +6,8 @@ public class Mouse : MonoBehaviour {
     private RaycastHit hit;
     private GameObject MouseObject;
 
+    public bool Chi = false;
+
     #region 单例
 
     private static Mouse _Instance;
@@ -36,13 +38,29 @@ public class Mouse : MonoBehaviour {
     void Update()
     {
         //射线定位
-        if (Input.GetMouseButtonDown(0))
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit))
+            if (!Chi)
             {
-                MouseObject = hit.collider.gameObject;
-                LogicOfGame.Instance.MouseClick(MouseObject);
+                if (Input.GetMouseButtonDown(0))
+                {
+                    MouseObject = hit.collider.gameObject;
+                    LogicOfGame.Instance.MouseClick(MouseObject);
+                }
+            }
+            else
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    MouseObject = hit.collider.gameObject;
+                    LogicOfGame.Instance.ChangeAnimation(MouseObject, true);
+                }
+                else
+                {
+                    MouseObject = hit.collider.gameObject;
+                    LogicOfGame.Instance.ChangeAnimation(MouseObject, false);
+                }
             }
         }
     }

@@ -32,8 +32,8 @@ public class FlowOfGame : MonoBehaviour {
     {
         if (isDeal)
         {
-            LogicOfGame.Instance.Deal(18);
-            LogicOfGame.Instance.ShowOperation(18);
+            //LogicOfGame.Instance.Deal(18);
+            LogicOfGame.Instance.ShowOperation(1);
             isDeal = false;
         }
     }

@@ -18,6 +18,16 @@ public enum ActionType
     RadioBrand = 2002,
 
     /// <summary>
+    /// 相应玩家操作等级
+    /// </summary>
+    RespondOperation = 2003,
+
+    /// <summary>
+    /// 获取玩家id
+    /// </summary>
+    GetPlayerId = 2004,
+
+    /// <summary>
     /// 接收出牌
     /// </summary>
     brandRadioResult = 3000,
@@ -37,5 +47,8 @@ public enum ActionType
     /// </summary>
     RoomMessage = 2006,
 
-
+    /// <summary>
+    /// 玩家id广播
+    /// </summary>
+    playerIdRadio = 3002,
 }

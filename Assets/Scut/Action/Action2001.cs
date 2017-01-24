@@ -24,6 +24,5 @@ public class Action2001 : BaseAction
     protected override void SendParameter(NetWriter writer, ActionParam actionParam)
     {
         writer.writeInt32("roomID", GameSetting.Instance.roomID);
-        writer.writeInt32("BrandOperation", GameSetting.Instance.BrandOperation);
     }
 }
