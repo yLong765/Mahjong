@@ -46,21 +46,35 @@ public class WebLogic : WebBase {
 
             case (int)ActionType.Room:
                 Param["success"] = actionResult.Get<int>("success");
+                GameSetting.Instance.PlayerName = actionResult.Get<string>("playerName");
                 break;
 
             case (int)ActionType.RoomMessage: 
                 Param["Name"] = actionResult.Get<string>("Name");
                 Param["Size"] = actionResult.Get<int>("Size");
                 break;
+
             case (int)ActionType.RoomMessageRadioResult:
                 Param["player1"] = actionResult.Get<string>("player1");
                 Param["player2"] = actionResult.Get<string>("player2");
                 Param["player3"] = actionResult.Get<string>("player3");
                 Param["player4"] = actionResult.Get<string>("player4");
+                GameSetting.Instance.roomName = actionResult.Get<string>("roomName");
+                break;
+
+            case (int)ActionType.Logic:
+                Param["brand"] = actionResult.Get<int>("brand");
+                break;
+
+            case (int)ActionType.GetPlayerId:
+                Param["playerId"] = actionResult.Get<int>("playerId");
+                Param["target"] = actionResult.Get<int>("target");
+                Param["StartNum"] = actionResult.Get<int>("StartNum");
                 break;
         }
 
-        SendEvnet(1, Param);
+        if (actionID == 2001 || actionID == 2004) SendEvnet(2, Param);
+        else SendEvnet(1, Param);
 
         GameSetting.Instance.CanSend = true;
     }
@@ -71,6 +85,8 @@ public class WebLogic : WebBase {
         int actionID = actionResult.Get<int>("ActionType");
         Param["ActionType"] = actionID;
 
+        Debug.Log("WebLogic : " + actionID);
+
         switch (actionID)
         {
             case (int)ActionType.RoomMessageRadioResult:
@@ -79,9 +95,21 @@ public class WebLogic : WebBase {
                 Param["player3"] = actionResult.Get<string>("player3");
                 Param["player4"] = actionResult.Get<string>("player4");
                 break;
+
+            case (int)ActionType.brandRadioResult:
+                Param["brand"] = actionResult.Get<int>("brand");
+                Param["playerid"] = actionResult.Get<int>("playerid");
+                break;
+
+            case (int)ActionType.playerIdRadio:
+                Param["num"] = actionResult.Get<int>("num");
+                Param["level"] = actionResult.Get<int>("level");
+                Param["PlayerId"] = actionResult.Get<int>("PlayerId");
+                break;
         }
 
-        SendEvnet(1, Param);
+        if (actionID == 3000 || actionID == 3002) SendEvnet(2, Param);
+        else SendEvnet(1, Param);
     }
 
 }

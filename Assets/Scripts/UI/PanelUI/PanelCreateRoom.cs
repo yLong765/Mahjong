@@ -40,7 +40,6 @@ public class PanelCreateRoom : PanelBase {
 
     protected override bool Event(ActionParam param)
     {
-        Debug.Log("PanelCreateRoom");
         int id = (int)param["ActionType"];
 
         if (id == (int)ActionType.Room)

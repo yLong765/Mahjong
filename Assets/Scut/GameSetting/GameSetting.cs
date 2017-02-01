@@ -14,17 +14,11 @@ public class GameSetting
     }
 
     public int roomID = 0;
-    public int BrandOperation;
-    public int RadioOperation;
-    public int Brand;
-
-    public bool RoomData = false;
-    public string player1 = "1";
-    public string player2 = "1";
-    public string player3 = "1";
-    public string player4 = "1";
     public string roomName = "";
-    public int Playerid;
+    public string PlayerName = "";
+    public int Playerid = -1;
+    public int target = -1;
+    public int StartNum = -1;
 
     public bool CanSend = false;
 

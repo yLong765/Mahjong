@@ -4,10 +4,11 @@ using System;
 
 public class Action2002 : BaseAction
 {
-    private ActionResult actionResult;
+    private ActionResult actionResult = new ActionResult();
 
     public Action2002() : base((int)ActionType.RadioBrand)
     {
+        actionResult["ActionType"] = (int)ActionType.RadioBrand;
     }
 
     public override ActionResult GetResponseData()

@@ -20,12 +20,14 @@ public class Action2000 : BaseAction
     protected override void DecodePackage(NetReader reader)
     {
         actionResult["success"] = reader.getInt();
+        actionResult["playerName"] = reader.readString();
     }
 
     protected override void SendParameter(NetWriter writer, ActionParam actionParam)
     {
         writer.writeInt32("roomID", (int)actionParam["roomID"]);
         writer.writeString("roomName", (string)actionParam["roomName"]);
+        writer.writeString("playerName", GameSetting.Instance.PlayerName);
         writer.writeInt32("roomOperation", (int)actionParam["roomOperation"]);
     }
 

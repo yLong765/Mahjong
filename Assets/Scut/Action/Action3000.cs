@@ -18,13 +18,12 @@ public class Action3000 : BaseAction
 
     protected override void DecodePackage(NetReader reader)
     {
-        actionResult = new ActionResult();
-        //actionResult["brand"] = reader.getInt();
-        Debug.Log(reader.getInt());
+        actionResult["brand"] = reader.getInt();
+        actionResult["playerid"] = reader.getInt();
+        WebLogic.Instance.RadioCallBack(actionResult);
     }
 
     protected override void SendParameter(NetWriter writer, ActionParam actionParam)
     {
-        Debug.Log("");
     }
 }

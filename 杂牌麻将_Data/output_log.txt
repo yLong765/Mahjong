@@ -4,7 +4,7 @@ Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
     Renderer: NVIDIA GeForce GTX 850M (ID=0x1391)
     Vendor:   NVIDIA
-    VRAM:     2018 MB
+    VRAM:     2019 MB
     Driver:   20.19.15.4531
 Begin MonoManager ReloadAssembly
 Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.dll (this message is harmless)
@@ -17,28 +17,114 @@ Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngi
 Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
 Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\ICSharpCode.SharpZipLib.dll (this message is harmless)
 Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\ICSharpCode.SharpZipLib.dll into Unity Child Domain
 Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Newtonsoft.Json.dll (this message is harmless)
 Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
 Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\protobuf-net.dll (this message is harmless)
 Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\protobuf-net.dll into Unity Child Domain
-- Completed reload, in  0.034 seconds
+- Completed reload, in  0.039 seconds
 Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.703446 ms
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 850M (ID=0x1391)
+    Vendor:   NVIDIA
+    VRAM:     2019 MB
+    Driver:   20.19.15.4531
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\ICSharpCode.SharpZipLib.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\ICSharpCode.SharpZipLib.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Newtonsoft.Json.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\protobuf-net.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\protobuf-net.dll into Unity Child Domain
+- Completed reload, in  0.042 seconds
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.855777 ms
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 850M (ID=0x1391)
+    Vendor:   NVIDIA
+    VRAM:     2019 MB
+    Driver:   20.19.15.4531
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\ICSharpCode.SharpZipLib.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\ICSharpCode.SharpZipLib.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Newtonsoft.Json.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\protobuf-net.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\protobuf-net.dll into Unity Child Domain
+- Completed reload, in  0.035 seconds
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.798203 ms
 Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1940 -> priority: 1 
-  Thread -> id: 27e0 -> priority: 1 
-Login
+  Thread -> id: 4268 -> priority: 1 
+  Thread -> id: 42c -> priority: 1 
+UnloadTime: 2.032216 ms
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2bac -> priority: 1 
+  Thread -> id: 794 -> priority: 1 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2b18 -> priority: 1 
+  Thread -> id: 1824 -> priority: 1 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -46,39 +132,7 @@ Parent of RectTransform is being set with parent property. Consider using the Se
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Room
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Room
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Room
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Room
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Room
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Room
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Room
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Room
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Room
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -86,7 +140,7 @@ Parent of RectTransform is being set with parent property. Consider using the Se
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-PanelCreateRoom
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -94,15 +148,853 @@ Parent of RectTransform is being set with parent property. Consider using the Se
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-InRoom
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-InRoom
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-InRoom
+WebLogic : 3001
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3001
+ 
+(Filename: C:/buildslave/unity/buildWartifacLogic n er01
+ed/
+cFilen/ame: C:/DeuiugBlain/ingunity/buil L/ne: 5fac
+t
+s/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WeWLogic ic  : 1e0
+1o
+ 
+ic :e3nam
+ /
+(Filenlldvs:lCave/uunldtyreufuctsartnuead/trtifomcrstegu/neratnebugBmmon/gruutnBcipDeLgug.ind1ncp
+p
+ Line: 51ine
+
+: 51)
+
+Parent of RePtTrannforo f  ReictTretn wirm i  berent properth parenit property. e Snsider usineghotde inStetP, witth theoworldPteaitionStays argumedPositionStays e. This will re failse. Tal orientationn local ole ratahion tnhan world ohrrienanation andrienale,ion ind scale, whinch can prevent comgmissues.
+ 
+(Filenasues 
+ 
+(Filedslave/Cnity/buisd/artifnctity/builted/comfacts/generated/coBindinrugts.e/Dnbug.cpp Lin.g: 51e
+
+.cpp Line: 51)
+
+Parent ofPRectTt of Rec iTransform is be beinset with parent prproperty. Consire usinn ghe SetPatePa meet hoetd i inteaad, with thh e wlorldPtisitioaytaysr amrnutent t to to false. This ll retaen localocal entaentatand scal scale rathea than world orientat ann  acnld swhich  wan h caen provmmo cUmmon Uling issues.s
+ s
+(Fes.
+ meFi: C:m/bu C:/bavu/unidty/builnityrtifacts/gieanerated/comed/comuontimntimeuDeBigBiindgs.genenccpp Linnee: 1)
+
+
+
+UnloadPng 6 Unof RectTransfeorm is beierialtzew fthl parent propnlty) n
+onsi dner usierialie ed tParent methodiznst fiead  nwwitha th: 0or
+ldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.457642 ms
+UnloadTime: 3.152193 ms
+UnloadTime: 2.555666 ms
+
+Unloading 353 unused Assets to reduce memory usage. Load
+ Objects now: 53un0s.
+ Asseas t:  0.uce 8e8ory9 ms (FindLiveOObject: n0.069308.
+ms Crl: teObj4972 pping: ndLiveOb6ects M0.087jects: 0.eateObjectMaDeplet:Ob0.059520.201990 ms)
+
+ts: 0.355124 ms  DeleteObjects: 0.142049 ms)
+
+
+Unloading 304 unused Assets to reduce memory usage. Loaded Objects now: 530.
+Total: 0.449550 ms (FindLiveObjects: 0.056245 ms CreateObjectMapping: 0.038181 ms MarkObjects: 0.259466 ms  DeleteObjects: 0.094836 ms)
+
+AwwakeDoDne
+ 
+ 
+(Filenaame: C:/builddslave//nitn/iuil/bartlifacts/generaenerated/commontime/DebugBindinindgen.cpg Line: 51)
+
+ne: 51)
+
+Awake Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IniIDaitDate D
+ 
+(Filenone
+ 
+(/builenaave/unituildslav//uairt/buitl/genetifaec/csm/on/runtted/cobmgBindingm.gen.onp/Line:im5/)D
+e
+bugBindings.gen.cpp Line: 51)
+
+InitDate Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+InitTable Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.Ipnitinael: D5o)n
+e
+
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather thaaent of ReorTrd nsieorm is being set with ptation andertca. Considerlue, gwthie SctPaaen p methodrinstea common UI scalingPosiuesnS.
+ 
+(tiaynsme:rgument ses la fa/unit This wiartifaain local orientotmmon/runtime/ rbugBindihga.gen.cpp Linientati)n
+ 
+and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+InitTable Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+HandDealInWeb Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+HandDealInWeb Done
+ 
+(Filename: C:/buildslave/unitH/anild/ardDfaealInWnerated/
+co
+mmon/runtime/Dbeildslaveiungts/buin.cpp Lfacts/51n)raed
+/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+HandDeal Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+otherHandDeal Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+HandDeal Done
+ 
+(Filename: C:/bHilanlDeal Done
+/ 
+(ld/lenamfa:ts/g/buildsed/comunoty/buildme/DtifacBingener.gedn.cppon/runtim1)
+
+ebugBindings.gen.cpp Line: 51)
+
+otherHandDeal Done
+ 
+(Filename: C:/buoldhlerHannity/builne
+ 
+(Ficts/generCated/coslane/runity//Debu/aBiidingt./gen.erated/nc:o51)
+
+/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3000
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3000
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3000
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogie : 3002
+: 3
+(File
+n
+(Filenaam: C:/ C:/dslaie/unity/blave/u/antitfactsldenertifa/cotson/rgenere/Dee/bugmoBinudings.gen.cBppdLnis.e:n.c1)
+Line: 51)
+
+31
+ 
+(Fil3n1a
+me
+: i:lbuime:dC:/avui/udslave/unity/build/as/ifacts/ted/common/runtime/DebugB/indings.gien.cpp Lcppe  5i1)
+ 
+51)
+
+Action 3002 decode package error:System.NullReferenceException: Object reference not set to an instance of an object
+  at LogicOfGame.otherDeal () [0x00000] in <filename unknown>:0 
+  at LogicOfGame.HandleEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.TriggerEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.DispatchEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.SendEvnet (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at WebLogic.RadioCallBack (.ActionResult actionResult) [0x00000] in <filename unknown>:0 
+  at AcWieoLngic : .3ec02
+ 
+acklee (.NeC:/buirlrealea) [0x0ty/bu ind/artifacts/generated/c
+ommon/runtime/DebugBinddePac.age (n.Ncpp Line: 5 r1)d
+)
+ [0x00000] in <filename unknown>:0 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Decode packag31f
+ l.
+(F
+ i
+lFenaneamCe: uildslales/unitunity/b/ilrtifacifa/ctne/ageneromteon/crumon/runtimu/Deindingsdinen.cpnp pip Line)
+
+51)
+
+DealInWeb Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Deal Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3000
+ 
+(Filename: C:/builWslave/uniey/build/artifacts/generated/common/runbiLogic : Binding3.0en.cpp Line: 00)
+
+ 
+(Febiogil :ename:
+ 
+(FilenCme:/b:/buildlavae//unityy/build/rtifacts/gegerated/coemon/r/uommon/rDuntgme/ndinbugBinn.cpp gene: 51)
+i
+ne: 51)
+
+WebLogic : 3002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+16
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3002
+ 
+(Filename: C:/buildslave/unityWbubLogild/ rti02
+ 
+(Filerated/nomme: /r:ubutime/Dee/unity/ngui.gen.rtpfacts/ege51)
+
+ted/common/r6
+ n
+(meleDeabugBi:ndings.gaee/.upnityne: /1)
+
+ld/artifacts1g6n
+ e
+rFtil/come: nCrunbuimdslDabveBuintdingsld/en.rcpfa tLine: 5ated
+/
+common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 30W0
+WL
+(ic : 300bileni
+ 
+(F l: a C0 /
+ b
+builenamev /un:it/bbiilddlavtifaeitans/generatesa/tinera/ruetimeer/rugBimoeimDn/renti.e/Dindicpp.ebu.cpp Ligs:. 51)c
+
+p)
+
+p Line: 51)
+
+WebLogic : 3002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+32
+ 
+(Filename: C:/buildslave/unity/WuebdLarogic :s/generate0/common/runtime/DebugBindings.gen.Wpp Lbine: Log
+
+ic0: 3
+0
+0(
+ 
+(Filme: C: C:/buiAddslave/00i dectave/uniage error:System.NullReferencety/eption: Object refbrenld/arttisfacts/genirntstancm of au/ obntime
+  abuLargiicncGs.ge..thpredenc: 51 o
+
+/ru0000] Debugi2en
+a
+(nFun.lename:0 
+ e:i51os
+
+clfGame.H/nuneEvyn2
+(
+(dnit3efad, :Act:orbterams avamanur uitynt00]min efbluaaic un/dinene:0a.epptLmioe:tN5dei
+
+rigeerEgBindings.geid, .ActionParam 
+p
+aram) [0x00000] in <filename unknown>:0 
+  at EventNode.DispatchEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.SendEvnet (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at WebLogic.RadioCallBack (.ActionResult actionResult) [0x00000] in <filename unknown>:0 
+  at Action3002.DecodePackage (.NetReader reader) [0x00000] in <filename unknown>:0 
+  at GameAction.TryDecodePackage (.NetReader reader) [0x00000] in <filename unknown>:0 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Decode package fail.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+DealInWeb Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Deal Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3000
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generatidcco : 3000nWeme/DebugBindings.gin.cpp Linc : 300
+
+
+0
+(
+ 
+(Filname: C:/buiillslave/unity/build/ld/artaifa/generateed/comcoon/mruntunmtiDmbugBinudiings.gs.gen.c Linpp Line
+
+: 51)
+
+WebLogic : 3002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: W1eb
+
+Logic :03 
+2i e
+(me: C:/e: iC:/buved/unity/build/aild/arttsfgces/eraerated/coon/n/runtintimebugBbugBingsngs.g.cppc p Line:5 )1)
+
+
+30
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Action 3002 decode package error:System.NullReferenceException: Object reference not set to an instance of an object
+  at LogicOfGame.otherDeal () [0x00000] in <filename unknown>:0 
+  at LogicOfGame.HandleEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.TriggerEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.DispatchEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.SendEvnet (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at WebLogic.RadioCallBack (.ActionResult actionResult) [0x00000] in <filename unknown>:0 
+  at Action3002.DecodePackage (.NetReader reader) [0x00000] in <filename unknown>:0 
+  at GameAction.TryDecodePackage (.NetReader reader) [0x00000] in <filename unknown>:0 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Decode package fail.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+DealInWeb Done
+ 
+(Filename: C:/buildslave/unity/build/artifacWsebLoeiaced/c30m2
+ o
+(F/runname:/DeCu:Bibuildsl.gen.cpit Lineild51rt
+
+acts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+30
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Deal Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3000
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtimeWDebLoginebL: sic3n0 cp
+ 
+(
+ F
+iFieLinaee  C:
+ildsdllavve/unity/build/artifacts/generated/omcon/run/rune/DeebugBgBindngsgg.n.cppppLine: 5151
+)
+
+
+WebLogic : 3002
+ bLogic : 3002
+ 
+(Filename: C:/buildslavWe(nFticl u:me:a0:/buildslave/unity/briifacts/geld/ated/common/runtamr/tifagBindiengrag
+en
+(Fcopm aniee:t:me
+
+ebugBvi/unings/ge
+n.
+cFip ld/aarei C:1sb
+g
+enerlave/unit1/b/
+r
+ltimlrtafue: Cdanbgs/gelaegeat.cpp Lene: 51)
+
+/cortif/r
+un
+/gmleramb:gCBobmiidnslt.g/enntecupg iLdie:s51c)n
+.
+gpp erLied/common
+/
+runtime/DebugBindings.gen.cpp Line: 51)
+
+WeeLogib Logic :
+W3
+ebilog0c :030
+C
+(F
+ ul
+(eisaleenCun/buiidbly/e/unild/atity/ild/d/aitacta/gen/getod/aoem//nomuintirebugBen/iemesDBbei.Bpinp sngs..epp .c
+p
+e: 5 1)n
+:
+ 51)
+
+WebLogic : 3002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+34W
+ 
+bLogiename: C:/
+ 
+(Fidslleveeoga/unit3:/bb
+ l
+ddF/aenime: cCuibgdlaerlaveaccs/ngey/r/atbd/cimmonrebuuftiBeiDenegasnedic.cs. on/rpue : n1/)
+5
+u1B)nd
+i
+ngs.gen.cpp Line: 51
+)
+
+Filename: C:/34
+l
+(Filenasmave/uni/ty/builad//unity/ts/gen/ertifrated/cnemon/run/common/rugBime/ngs.gBindinn.cgp Line:  Lin
+e
+: 51)
+
+Action 3002 decode package error:System.NullReferenceException: Object reference not set to an instance of an object
+  at LogicOfGame.otherDeal () [0x00000] in <filename unknown>:0 
+  at LogicOfGame.HandleEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.TriggerEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.DispatchEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.SendEvnet (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at WebLogic.RadioCallBack (.ActionResult actionResult) [0x00000] in <filename unknown>:0 
+  at Action3002.DecodePackage (.NetReader reader) [0x00000] in <filename unknown>:0 
+  at GameAction.TryDecodePackage (.NetReader reader) [0x00000] in <filename unknown>:0 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Decode package fail.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+DealInWeb Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Deal Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3000
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindWngb.gon.cpp Line: 51)
+
+gic : 3000
+ 
+WFebenaogmc : C:/00
+bu
+ilislave/un i:y/buiild/artifacts/generd/artifacts/generime/dDebmugBindings.gen.upg Linnd: 51)
+
+n.cpp Line: 51)
+
+WebLogic : 3002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+20
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogWc : Logic 303022
+ 
+
+(
+(Filename: n:/beildsl/veuunlisylave/unityifbaclt/srtgeneifacts/gener/runticmmmen/rDubntBind/Dgs.uegBcpp Line:g n.5p1 )i
+n
+e: 51)
+
+20
+ 
+(File2n
+ame  C
+(bFiiename: e:/builuslave//nbuild/iltifartsigenerfacdt//goeneratedtime/Donb/runtimegs.bugBindings Li.e:g51n.c
+p
+p Line: 51)
+
+WebLogic : 3000
+ 
+(Filename: C:/buildslave/unity/bWild/arWifa L3gig0ne a30000
+0
+m
+Fi
+lFonnie:enam iC://bC:ibdsugBe/une/i.nyt//ucilldap Lrrifa: itsa
+c
+tene/gatnerat/common/runtime/DebugBiunBindis.ngs.cpp.c pLinne:  51)
+
+
+WebLogic : 3002
+ 
+(WieenLaoe:ic :/: i002
+ ve/
+(Filenamld: /:/buildsts/genlrave/unimymon/runtrtme/DfactBs/genera.gen.ed/coime: n/run
+
+time/Debug7in
+di
+ngilsna.gen.c/bupld Llave/u51)
+
+/build/artifa7ts
+ 
+(Fgelnnerat C:/bueldscomame/uoit/r/bntuil/DebrtBifactss.gen.cpte Li/comm1)o
+
+n/runtime/DebugBindings.gen.cpp Line: 51)
+
+Action 3002 decode package error:System.NullReferenceException: Object reference not set to an instance of an object
+  at LogicOfGame.otherDeal () [0x00000] in <filename unknown>:0 
+  at LogicOfGame.HandleEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.TriggerEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.DispatchEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.SendEvnet (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at WebLogic.RadioCallBack (.ActionResult actionResult) [0x00000] in <filename unknown>:0 
+  at Action3002.DecodePackage (.NetReader reader) [0x00000] in <filename unknown>:0 
+  at GameAction.TryDecodePackage (.NetReader reader) [0x00000] in <filename unknown>:0 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Decode package fail.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+DealInWeb Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+7
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Deal Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3000
+ 
+(Filename: C:/buildslave/unity/build/artifactWebLogiat ed/com
+ 
+(/runtiWme/:e ogiB : dii3g0sgav
+n
+cFpp eynane: C /bt)f
+
+cslave/unraty/b/common/ruild/arDtebacBisndi/gsgenn.cpp L/necomm)
+
+runtime/DebugBindings.gen.cpp Line: 51)
+
+WebWogec Log0i2c
+ 
+(Fi0en
+ 
+ame:ename: C:/buC:dbuildslave/ve/un/byuild/a/ariffacas/ten/genera/cemmon/runtime/DebugBindings.gen.cpp Lind: 51)
+
+/1
+ 
+(Fcommon/runtime/DebugBindings.gen.cpp Line: 51)
+
+i1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBildings.gen.cpp Linee 51)n
+
+WmbLoeic ::3002
+ 
+(Filename: C:/b C:/buile/slave/unity/baritdifacts/faneratedccommon/runtim//DgeneBrited/ncomgmn.c/runtneime/De
+b
+ugBindings.gen.cpp31
+ 
+(F51)
+
+ame: C:/buildslave/unity/build/artifacts/Aeneion 3002 decode packrgated/ error:Systec.Nmmon/runtime/DebugBindings.gen.cpp Line: 51)
+
+ullReferenceException: Object reference not set to an instance of an object
+  at LogicOfGame.otherDeal () [0x00000] in <filename unknown>:0 
+  at LogicOfGame.HandleEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.TriggerEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.DispatchEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.SendEvnet (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at WebLogic.RadioCallBack (.ActionResult actionResult) [0x00000] in <filename unknown>:0 
+  at Action3002.DecodePackage (.NetReader reader) [0x00000] in <filename unknown>:0 
+  at GameAction.TryDecodePackage (.NetReader reader) [0x00000] in <filename unknown>:0 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Decode package fail.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+DealInWeb Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Deal Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3000
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3000
+ 
+(Filename: ebLogild :sl000e
+ /unity/
+uFill/ename:c C:/enuierslavd/ucity/bun/runtrme/ifacts/gndinratedenommon/iuntim51)D
+
+ebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+31
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+31
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+31
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Action 3002 decode package error:System.NullReferenceException: Object reference not set to an instance of an object
+  at LogicOfGame.otherDeal () [0x00000] in <filename unknown>:0 
+  at LogicOfGame.HandleEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.TriggerEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.DispatchEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.SendEvnet (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at WebLogic.RadioCallBack (.ActionResult actionResult) [0x00000] in <filename unknown>:0 
+  at Action3002.DecodePackage (.NetReader reader) [0x00000] in <filename unknown>:0 
+  at GameAction.TryDecodePackage (.NetReader reader) [0x00000] in <filename unknown>:0 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Decode package fail.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+DealInWeb Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Deal Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3000
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3000
+ 
+(Filename: C:/buildslave/unity/build/artifacts/geneWaeed/coic mo 3000
+n/ru
+(Filntime: C:ugBindings.geun.cpp Line/artif
+
+acts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLoWicebL3002
+ 
+(3File
+na
+(F 3 eCa
+eb
+ uil/suaavdsle: /unity/bn/billd/bauetldfnc/y//rtin/ars/tgdicractms/onommru/ntent/immb/ugrBnntdminDins.b.ngnpnppnp Lgen5.5c)
+
+p
+Line: 51)
+
+5
+ 
+5
+F i
+(eFnnaen: C//buiildsluvie/dntiateylnbtyitbufacd/igacieraceee//eommo//redomioommon/r/meubntigBimdiniDgbs.egencdi cpgsp giee:
+
+5pp L
+i
+ne: 51)
+
+WebLogic : 3000
+ 
+(FilenebL:gicC:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3000
+ 
+(Fi000enam
+e
+( C:Fbulilame: e/unuity/buie/unity/build/artifacts/generated/comts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+mon/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+We3Lg c( il300m2e
+: 
+CF:lenamlds:lav//buitydslavld/anity/bcits/arenfectateener/ctmed/commoime/uneibugDendbugs.inenincs.genpcppLinen e1) 5
+
+1)
+
+3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Action 3002 decode package error:System.NullReferenceException: Object reference not set to an instance of an object
+  at LogicOfGame.otherDeal () [0x00000] in <filename unknown>:0 
+  at LogicOfGame.HandleEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.TriggerEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.DispatchEvent (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at EventNode.SendEvnet (Int32 id, .ActionParam param) [0x00000] in <filename unknown>:0 
+  at WebLogic.RadioCallBack (.ActionResult actionResult) [0x00000] in <filename unknown>:0 
+  at Action3002.DecodePackage (.NetReader reader) [0x00000] in <filename unknown>:0 
+  at GameAction.TryDecodePackage (.NetReader reader) [0x00000] in <filename unknown>:0 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Decode package fail.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+DealInWeb Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WebLogic : 3002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Deal D
+ 
+(eil
+ meF:iC:/baime: C:/bunity/buied/artifbuild/artifaceds/oemoneruattme/Debmmonirndinme/.gDe.ucppndLings.ge)n
+.
+cpp Line: 51)
 

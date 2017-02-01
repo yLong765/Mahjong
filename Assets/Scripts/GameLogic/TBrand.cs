@@ -5,6 +5,13 @@ public class TBrand : MonoBehaviour{
 
     private int BrandId;
 
+    private Vector3 myPos;
+
+    public void setPos(Vector3 pos)
+    {
+        myPos = pos;
+    }
+
     public void setBrandId(int id)
     {
         BrandId = id;
@@ -17,16 +24,14 @@ public class TBrand : MonoBehaviour{
 
     public void OnClickUp()
     {
-        Vector3 pos = transform.localPosition;
+        Vector3 pos = myPos;
         pos.z += 0.2f;
         transform.localPosition = pos;
     }
 
     public void Down()
     {
-        Vector3 pos = transform.localPosition;
-        pos.z -= 0.2f;
-        transform.localPosition = pos;
+        transform.localPosition = myPos;
     }
 
     public void OnClickShow()

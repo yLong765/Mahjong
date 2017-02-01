@@ -320,7 +320,22 @@ public class MyPlayer {
     /// </summary>
     public void Sort()
     {
-        Array.Sort(brands,0,size);
+        for (int i = 0; i < size - 1; i++)
+        {
+            for (int j = i; j < size; j++)
+            {
+                if (brands[i] > brands[j])
+                {
+                    int T = brands[i];
+                    brands[i] = brands[j];
+                    brands[j] = T;
+
+                    GameObject G = brandsGB[i];
+                    brandsGB[i] = brandsGB[j];
+                    brandsGB[j] = G;
+                }
+            }
+        }
     }
 
     /// <summary>
@@ -349,6 +364,8 @@ public class MyPlayer {
     public void Add(int num)
     {
         brands[size] = num;
+        brandsGB[size] = ResourceMgr.Instance.CreateGameObject("Mahjong/mj" + num, true);
+
         size++;
     }
 
@@ -380,14 +397,38 @@ public class MyPlayer {
         return brandsGB[num];
     }
 
+    public GameObject GetObEnd()
+    {
+        return brandsGB[size - 1];
+    }
+
     /// <summary>
     /// 删除手牌
     /// </summary>
     /// <param name="num"></param>
     public void Remove(int pos)
     {
-        brands[pos] = brands[size];
+        brands[pos] = brands[size - 1];
+
+        GameObject t = brandsGB[pos];
+        brandsGB[pos] = brandsGB[size - 1];
+        brandsGB[size - 1] = t;
+
+        GameObject.Destroy(brandsGB[size - 1]);
+
         size--;
+    }
+
+    public int FindId(GameObject gb)
+    {
+        for (int i = 0; i < size; i++)
+        {
+            if (brandsGB[i] == gb)
+            {
+                return i;
+            }
+        }
+        return -1;
     }
 
 }

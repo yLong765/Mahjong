@@ -55,7 +55,6 @@ public class SceneRoom : SceneBase {
 
     protected override bool Event(ActionParam param)
     {
-        Debug.Log("Room");
         int id = (int)param["ActionType"];
 
         switch (id)

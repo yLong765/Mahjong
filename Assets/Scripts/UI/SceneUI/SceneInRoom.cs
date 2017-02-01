@@ -30,8 +30,8 @@ public class SceneInRoom : SceneBase {
 
     protected override bool Event(ActionParam param)
     {
-        Debug.Log("InRoom");
         int id = (int)param["ActionType"];
+
         if (id == (int)ActionType.RoomMessageRadioResult)
         {
             playernum = 0;
@@ -44,6 +44,13 @@ public class SceneInRoom : SceneBase {
             {
                 playernum = 0;
                 BgImage.gameObject.SetActive(true);
+
+                ActionParam Param = new ActionParam();
+
+                Param["roomID"] = GameSetting.Instance.roomID;
+
+                WebLogic.Instance.Send((int)ActionType.GameInit, Param);
+
                 Invoke("Switch", 2f);
             }
         }
@@ -74,6 +81,7 @@ public class SceneInRoom : SceneBase {
 
     private void Switch()
     {
-        Debug.Log("Go");
+        SceneManager.Instance.SceneSwitch(SceneType.Type.Game);
+        SceneMgr.Instance.SceneSwitch(SceneState.SceneGame);
     }
 }

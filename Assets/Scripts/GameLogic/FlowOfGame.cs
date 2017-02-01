@@ -3,38 +3,73 @@ using System.Collections;
 
 public class FlowOfGame : MonoBehaviour {
 
-    private bool isHandDeal; //是否发全部手牌
-    private bool isDeal; //是否发牌
+    #region Instance
+
+    private static FlowOfGame _Instance;
+
+    public static FlowOfGame Instance
+    {
+        get
+        {
+            if (_Instance == null)
+            {
+                _Instance = new GameObject("_FlowOfGame").AddComponent<FlowOfGame>();
+            }
+            return _Instance;
+        }
+    }
+
+    #endregion
+
+    void Awake()
+    {
+        _Instance = this;
+    }
 
     void Start()
     {
-        isHandDeal = true;
-        isDeal = false;
-        Invoke("Init", 1f);
+        Init();
     }
 
     private void Init()
     {
+        LogicOfGame.Instance.InitDate();
+    }
+
+    public void InitTable()
+    {
         LogicOfGame.Instance.InitTable();
-        if (isHandDeal)
-        {
-            Invoke("InitHandDeal", 0.5f);
-        }
+        SceneMgr.Instance.SceneSwitch(SceneState.SceneGame);
+        Invoke("InitHandDeal", 0.5f);
     }
 
     private void InitHandDeal()
     {
-        LogicOfGame.Instance.HandDeal();
-        isDeal = true;
+        LogicOfGame.Instance.HandDealInWeb();
+        if (GameSetting.Instance.target != GameSetting.Instance.Playerid)
+            LogicOfGame.Instance.otherDeal();
     }
+
+    public bool Deal = false;
+    public bool DealDone = false;
+    public bool InitDone = false;
 
     void Update()
     {
-        if (isDeal)
+        if (Deal)
         {
-            //LogicOfGame.Instance.Deal(18);
-            LogicOfGame.Instance.ShowOperation(1);
-            isDeal = false;
+            LogicOfGame.Instance.DealInWeb();
+            Deal = false;
+            InitDone = true;
+        }
+        if (DealDone && InitDone)
+        {
+            LogicOfGame.Instance.Deal();
+            DealDone = false;
+        }
+        else
+        {
+            DealDone = false;
         }
     }
 

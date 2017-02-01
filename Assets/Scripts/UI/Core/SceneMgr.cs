@@ -32,6 +32,7 @@ public class SceneMgr {
     /// <param name="state">Scene</param>
     public void SceneSwitch(SceneState state)
     {
+        parentObj = GameObject.Find("Canvas").transform;
         string name = state.ToString();
         GameObject scene = new GameObject(name);
         scene.transform.parent = parentObj;

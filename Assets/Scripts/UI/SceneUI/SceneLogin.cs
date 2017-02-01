@@ -32,7 +32,6 @@ public class SceneLogin : SceneBase {
 
     protected override bool Event(ActionParam param)
     {
-        Debug.Log("Login");
         int id = (int)param["ActionType"];
 
         if (id == (int)ActionType.Login)

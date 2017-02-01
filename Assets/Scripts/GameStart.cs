@@ -10,16 +10,16 @@ public class GameStart : MonoBehaviour {
         SceneMgr.Instance.SceneSwitch(SceneState.SceneLogin);
 	}
 
-    void OnDestroy()
-    {
+    //void OnDestroy()
+    //{
 
-        ActionParam param = new ActionParam();
-        param["roomID"] = GameSetting.Instance.roomID;
-        param["roomName"] = "";
-        param["roomOperation"] = 2;
+    //    ActionParam param = new ActionParam();
+    //    param["roomID"] = GameSetting.Instance.roomID;
+    //    param["roomName"] = "";
+    //    param["roomOperation"] = 2;
 
-        Net.Instance.Send((int)ActionType.Room, null, param);
+    //    Net.Instance.Send((int)ActionType.Room, null, param);
 
-    }
+    //}
 	
 }

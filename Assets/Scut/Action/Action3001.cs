@@ -22,7 +22,7 @@ public class Action3001 : BaseAction
         actionResult["player2"] = reader.readString();
         actionResult["player3"] = reader.readString();
         actionResult["player4"] = reader.readString();
-
+        actionResult["roomName"] = reader.readString();
         WebLogic.Instance.RadioCallBack(actionResult);
     }
 

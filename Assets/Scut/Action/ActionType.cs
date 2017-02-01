@@ -47,6 +47,8 @@ public enum ActionType
     /// </summary>
     RoomMessage = 2006,
 
+    GameInit = 2007,
+
     /// <summary>
     /// 玩家id广播
     /// </summary>

@@ -53,6 +53,7 @@ public class Mouse : MonoBehaviour {
             {
                 if (Input.GetMouseButtonDown(0))
                 {
+                    Chi = false;
                     MouseObject = hit.collider.gameObject;
                     LogicOfGame.Instance.ChangeAnimation(MouseObject, true);
                 }

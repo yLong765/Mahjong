@@ -22,6 +22,7 @@ public class Action3002 : BaseAction
         actionResult["num"] = reader.getInt();
         actionResult["level"] = reader.getInt();
         actionResult["PlayerId"] = reader.getInt();
+        WebLogic.Instance.RadioCallBack(actionResult);
     }
 
     protected override void SendParameter(NetWriter writer, ActionParam actionParam)

@@ -27,15 +27,12 @@ public class UItest : MonoBehaviour {
     {
         NetWriter.SetUrl(Url);
         GameSetting.Instance.roomID = int.Parse(roomID.text);
-        GameSetting.Instance.RadioOperation = 1;
-        GameSetting.Instance.Brand = 90;
         Net.Instance.Send(2002, RoomCallback, null);
     }
 
     private void Click()
     {
         GameSetting.Instance.roomID = int.Parse(roomID.text);
-        GameSetting.Instance.BrandOperation = 1;
         NetWriter.SetUrl(Url);
 
         if (Action.text.Equals("2001"))

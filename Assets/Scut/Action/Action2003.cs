@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class Action2003 : BaseAction
 {
-    private ActionResult actionResult;
+    private ActionResult actionResult = new ActionResult();
 
     public Action2003() : base((int)ActionType.RespondOperation)
     {
+        actionResult["ActionType"] = (int)ActionType.RespondOperation;
     }
 
     public override ActionResult GetResponseData()
@@ -17,8 +18,8 @@ public class Action2003 : BaseAction
     }
 
     protected override void DecodePackage(NetReader reader)
-    {
-        
+    {        
+
     }
 
     protected override void SendParameter(NetWriter writer, ActionParam actionParam)
