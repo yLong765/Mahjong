@@ -3,9 +3,9 @@
 public enum ActionType
 {
     /// <summary>
-    /// 房间操作
+    /// 加入房间
     /// </summary>
-    Room = 2000,
+    JoinRoom = 2000,
 
     /// <summary>
     /// 逻辑操作
@@ -49,8 +49,16 @@ public enum ActionType
 
     GameInit = 2007,
 
+    SendGameEndMessage = 2008,
+
     /// <summary>
     /// 玩家id广播
     /// </summary>
     playerIdRadio = 3002,
+    
+    /// <summary>
+    /// 游戏结束数据广播
+    /// </summary>
+    GameEnd = 3003,
+    
 }

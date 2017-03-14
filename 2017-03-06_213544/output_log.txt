@@ -1,0 +1,520 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 850M (ID=0x1391)
+    Vendor:   NVIDIA
+    VRAM:     2019 MB
+    Driver:   20.19.15.4531
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\ICSharpCode.SharpZipLib.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\ICSharpCode.SharpZipLib.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Newtonsoft.Json.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\protobuf-net.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\protobuf-net.dll into Unity Child Domain
+- Completed reload, in  0.040 seconds
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 850M (ID=0x1391)
+    Vendor:   NVIDIA
+    VRAM:     2019 MB
+    Driver:   20.19.15.4531
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\ICSharpCode.SharpZipLib.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\ICSharpCode.SharpZipLib.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Newtonsoft.Json.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\protobuf-net.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\protobuf-net.dll into Unity Child Domain
+- Completed reload, in  0.038 seconds
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.409088 ms
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 850M (ID=0x1391)
+    Vendor:   NVIDIA
+    VRAM:     2019 MB
+    Driver:   20.19.15.4531
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\ICSharpCode.SharpZipLib.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\ICSharpCode.SharpZipLib.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Newtonsoft.Json.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\protobuf-net.dll (this message is harmless)
+Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\protobuf-net.dll into Unity Child Domain
+- Completed reload, in  0.037 seconds
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.068334 ms
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 39e4 -> priority: 1 
+  Thread -> id: 418 -> priority: 1 
+UnloadTime: 1.947223 ms
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2d68 -> priority: 1 
+  Thread -> id: 3694 -> priority: 1 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 38b8 -> priority: 1 
+  Thread -> id: 120c -> priority: 1 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+321
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+321
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+321
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloanlinaging 6 nUnuseSd SUlrzedo difzlge 6 dn(Sursed iled r iaSeerzial wz leadle:   (S
+erialized files now 
+loaded: 0)
+UnloadTime: 2.946494 ms
+UnloadTime: 2.722746 ms
+UnloadTime: 3.451056 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 761.
+Total: 0.504561 ms (FindLiveObjects: 0.053781 ms CreateObjectMapping: 0.026274 ms MarkObjects: 0.398640 ms  DeleteObjects: 0.024632 ms)
+
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 761.
+Total: 0.524678 ms (FindLiveObjects: 0.050907 ms CreateObjectMapping: 0.031612 ms MarkObjects: 0.417526 ms  DeleteObjects: 0.023401 ms)
+
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 761.
+Total: 0.643737 ms (FindLiveObjects: 0.074308 ms CreateObjectMapping: 0.029969 ms MarkObjects: 0.505793 ms  DeleteObjects: 0.032843 ms)
+
+Awake Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp LineA 51k) D
+o
+ne
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Awake Done
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using Phe rent SfeRectTransformtParent m is beineaset  of RectTrodath nparenss bepropeitegy  d,Cwi with parnent p toper thng  he wnsedelParsPosigioetne SodPa ynt imerstehan, dwisstethta ,thaese i.oTrhd oswiietiwrnoretys argumid Pooisial torieyntaationn and stcale sr. ahhie wittha eal wtel.idnhrlocis irwiena rttaaidn l scaad lce r, rhthe ctn aptehenntdcormld orne traioherst annd wollri,lgh issuand esrrie
+n
+eani nname: c:/bolmon,dshiaIe  cauin pgry/ ui lsmeaon.Ui
+ Ifs(Facllsnnaginsr:satu/b/ci.ds
+l
+(ai/runiimm/eeby: Cnbiind/s.leaslppive/tsneig yneb
+r
+ltdd/aormotirunctime/DeebugdBindmings.ngen.cDpp Liine: 51.gen.cpp Line: 51))
+
+
+0
+ 
+(F
+iFeni0e
+:e ::/bCe/ilails: Cesl/uniitdelun/ty/b/inild/ay/rtibuiactlc/ds//reatritfead/comtsnmrugntirueraeimge//noebngmugen/cin uitineme/:e.ggBn.1ppn
+i
+nng: 5g1).
+p
+Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/gener0t
+d
+(Fcomlmnamo: n:/bruntiuildslaveiunitydbiigs.ldn.cpp Line: 51)
+
+/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts
+/g
+eneranamet Cd/coildmlameoun/runtiie/Dd/bartifdctings.gen.cpp Lime:o51/r)nt
+i
+me/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(FFilenae:me: C:/bdslavui/unlave/ty/biild/a/rtifa/ts/genarated/common/rurttme/faDcbugBinds/iengs.tgen.opp Linemmo /run51)t
+
+ime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: 0:/bil
+(Fildnamslav: uCit:/build/arave/utifa/cbuild/eartedtifcommot/rus/gtneratedicomm/Derubugiindmeing/.Den.cbugBinpp Line: 5cpp1)
+i
+ne: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslav0/unity/buil
+ 
+(ifacts/generFtedlename:n/rC:/ntime/DebugBindingsbuiednlave/uncty/build/aptif ctL/ginerated/conmen/runt:m /51)
+g
+Bindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filen0me
+ C
+/Fiilenslmea C:/uuiiy/lduild//unity/abui/ged/eartifactsmo//gunntrame/d/ceommoBindings.genbu.Bcndinp sLiene:p  Li)
+
+ 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+  
+(
+(lFFiamen naembCil: lCve/i/uslniiy//bndtu/lavl/dnity/arbiauils/g/aernetattcedts/ogcoo/ernmom/ted//ebugBmebnndgBunnnnts.ieen.cpe/pe uLLninne1in
+ 5
+g1.gen
+.
+cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Crash!!!
+SymInit: Symbol-SearchPath: '.;D:\work\file\ChinaMahjong;D:\work\file\ChinaMahjong;C:\WINDOWS;C:\WINDOWS\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 530, UserName: 'Administrator'
+OS-Version: 10.0.14393 () 0x100-0x1
+D:\work\file\ChinaMahjong\�����齫.exe:�����齫.exe (00007FF714F00000), size: 23150592 (result: 0), SymType: '-exported-', PDB: 'D:\work\file\ChinaMahjong\�����齫', fileVersion: 5.5.0.46319
+C:\WINDOWS\SYSTEM32\ntdll.dll:ntdll.dll (00007FFB58750000), size: 1904640 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\ntdll.dll', fileVersion: 10.0.14393.479
+C:\WINDOWS\System32\KERNEL32.DLL:KERNEL32.DLL (00007FFB57C70000), size: 700416 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\KERNEL32.DLL', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\KERNELBASE.dll:KERNELBASE.dll (00007FFB54D60000), size: 2215936 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\KERNELBASE.dll', fileVersion: 10.0.14393.479
+C:\WINDOWS\System32\USER32.dll:USER32.dll (00007FFB55C90000), size: 1462272 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\USER32.dll', fileVersion: 10.0.14393.576
+C:\WINDOWS\System32\win32u.dll:win32u.dll (00007FFB549F0000), size: 122880 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\win32u.dll', fileVersion: 10.0.14393.51
+C:\WINDOWS\SYSTEM32\HID.DLL:HID.DLL (00007FFB53840000), size: 49152 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\HID.DLL', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\GDI32.dll:GDI32.dll (00007FFB58510000), size: 212992 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\GDI32.dll', fileVersion: 10.0.14393.206
+C:\WINDOWS\System32\gdi32full.dll:gdi32full.dll (00007FFB54A60000), size: 1581056 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\gdi32full.dll', fileVersion: 10.0.14393.576
+C:\WINDOWS\System32\ole32.dll:ole32.dll (00007FFB57B30000), size: 1273856 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\ole32.dll', fileVersion: 10.0.14393.576
+C:\WINDOWS\System32\combase.dll:combase.dll (00007FFB562B0000), size: 2916352 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\combase.dll', fileVersion: 10.0.14393.576
+C:\WINDOWS\System32\msvcrt.dll:msvcrt.dll (00007FFB55BF0000), size: 647168 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\msvcrt.dll', fileVersion: 7.0.14393.0
+C:\WINDOWS\System32\ucrtbase.dll:ucrtbase.dll (00007FFB54F80000), size: 1003520 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\ucrtbase.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\RPCRT4.dll:RPCRT4.dll (00007FFB58550000), size: 1183744 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\RPCRT4.dll', fileVersion: 10.0.14393.82
+C:\WINDOWS\SYSTEM32\VERSION.dll:VERSION.dll (00007FFB509A0000), size: 40960 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\VERSION.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\bcryptPrimitives.dll:bcryptPrimitives.dll (00007FFB54C40000), size: 434176 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\bcryptPrimitives.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\sechost.dll:sechost.dll (00007FFB561A0000), size: 364544 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\sechost.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\SHLWAPI.dll:SHLWAPI.dll (00007FFB55B20000), size: 335872 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\SHLWAPI.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\ADVAPI32.dll:ADVAPI32.dll (00007FFB586A0000), size: 663552 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\ADVAPI32.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\SHELL32.dll:SHELL32.dll (00007FFB56620000), size: 22056960 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\SHELL32.dll', fileVersion: 10.0.14393.693
+C:\WINDOWS\System32\cfgmgr32.dll:cfgmgr32.dll (00007FFB54BF0000), size: 270336 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\cfgmgr32.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\windows.storage.dll:windows.storage.dll (00007FFB55440000), size: 7184384 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\windows.storage.dll', fileVersion: 10.0.14393.479
+C:\WINDOWS\System32\powrprof.dll:powrprof.dll (00007FFB54A10000), size: 311296 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\powrprof.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\kernel.appcore.dll:kernel.appcore.dll (00007FFB549B0000), size: 61440 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\kernel.appcore.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\shcore.dll:shcore.dll (00007FFB55080000), size: 692224 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\shcore.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\profapi.dll:profapi.dll (00007FFB549D0000), size: 81920 (result: 0), SymType: '-nosymbols-', PDB: 'C:\WINDOWS\System32\profapi.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\WINMM.dll:WINMM.dll (00007FFB551A0000), size: 143360 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\WINMM.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\WINMMBASE.dll:WINMMBASE.dll (00007FFB54980000), size: 176128 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\WINMMBASE.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\SYSTEM32\OPENGL32.dll:OPENGL32.dll (00007FFB3A210000), size: 1191936 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\OPENGL32.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\WS2_32.dll:WS2_32.dll (00007FFB55B80000), size: 434176 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\WS2_32.dll', fileVersion: 10.0.14393.206
+C:\WINDOWS\System32\OLEAUT32.dll:OLEAUT32.dll (00007FFB57D90000), size: 782336 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\OLEAUT32.dll', fileVersion: 10.0.14393.447
+C:\WINDOWS\System32\msvcp_win.dll:msvcp_win.dll (00007FFB553A0000), size: 638976 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\msvcp_win.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\IMM32.dll:IMM32.dll (00007FFB565F0000), size: 188416 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\IMM32.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\SYSTEM32\DNSAPI.dll:DNSAPI.dll (00007FFB54050000), size: 655360 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\DNSAPI.dll', fileVersion: 10.0.14393.206
+C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL:IPHLPAPI.DLL (00007FFB54010000), size: 229376 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL', fileVersion: 10.0.14393.0
+C:\WINDOWS\SYSTEM32\WINHTTP.dll:WINHTTP.dll (00007FFB51AC0000), size: 839680 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\WINHTTP.dll', fileVersion: 10.0.14393.351
+C:\WINDOWS\System32\DDRAW.dll:DDRAW.dll (00007FFB55E00000), size: 1011712 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\DDRAW.dll', fileVersion: 10.0.14393.447
+C:\WINDOWS\System32\DCIMAN32.dll:DCIMAN32.dll (00007FFB55190000), size: 32768 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\DCIMAN32.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\SYSTEM32\GLU32.dll:GLU32.dll (00007FFB47540000), size: 184320 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\GLU32.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\NSI.dll:NSI.dll (00007FFB58280000), size: 32768 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\NSI.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\system32\uxtheme.dll:uxtheme.dll (00007FFB53030000), size: 610304 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\system32\uxtheme.dll', fileVersion: 10.0.14393.0
+D:\work\file\ChinaMahjong\�����齫_Data\Mono\mono.dll:mono.dll (00007FFB0D1C0000), size: 2998272 (result: 0), SymType: '-exported-', PDB: 'D:\work\file\ChinaMahjong\�����齫_Data\Mono\mono', fileVersion: 1.0.0.1
+C:\WINDOWS\System32\PSAPI.DLL:PSAPI.DLL (00007FFB56200000), size: 32768 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\PSAPI.DLL', fileVersion: 10.0.14393.0
+C:\WINDOWS\SYSTEM32\MSWSOCK.dll:MSWSOCK.dll (00007FFB54280000), size: 376832 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\MSWSOCK.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\MSCTF.dll:MSCTF.dll (00007FFB583B0000), size: 1421312 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\MSCTF.dll', fileVersion: 10.0.14393.479
+C:\WINDOWS\system32\dwmapi.dll:dwmapi.dll (00007FFB52450000), size: 155648 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\system32\dwmapi.dll', fileVersion: 10.0.14393.206
+C:\WINDOWS\SYSTEM32\d3d11.dll:d3d11.dll (00007FFB4FCE0000), size: 2842624 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\d3d11.dll', fileVersion: 10.0.14393.479
+C:\WINDOWS\SYSTEM32\dxgi.dll:dxgi.dll (00007FFB538E0000), size: 651264 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\dxgi.dll', fileVersion: 10.0.14393.479
+C:\WINDOWS\System32\DriverStore\FileRepository\nvcvi.inf_amd64_c9fbab96af0e958b\nvwgf2umx.dll:nvwgf2umx.dll (00007FFB133B0000), size: 24084480 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\DriverStore\FileRepository\nvcvi.inf_amd64_c9fbab96af0e958b\nvwgf2umx.dll', fileVersion: 21.21.13.7866
+C:\WINDOWS\SYSTEM32\bcrypt.dll:bcrypt.dll (00007FFB54530000), size: 176128 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\bcrypt.dll', fileVersion: 10.0.14393.576
+C:\WINDOWS\system32\nvspcap64.dll:nvspcap64.dll (00007FFB3DCE0000), size: 1900544 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\system32\nvspcap64.dll', fileVersion: 3.3.0.95
+C:\WINDOWS\System32\SETUPAPI.dll:SETUPAPI.dll (00007FFB57E50000), size: 4362240 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\SETUPAPI.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\SYSTEM32\WTSAPI32.dll:WTSAPI32.dll (00007FFB52160000), size: 77824 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\WTSAPI32.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\system32\nvapi64.dll:nvapi64.dll (00007FFB4AAC0000), size: 4317184 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\system32\nvapi64.dll', fileVersion: 21.21.13.7866
+C:\WINDOWS\System32\clbcatq.dll:clbcatq.dll (00007FFB56210000), size: 651264 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\clbcatq.dll', fileVersion: 2001.12.10941.16384
+C:\WINDOWS\system32\wbem\wbemprox.dll:wbemprox.dll (00007FFB50970000), size: 65536 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\system32\wbem\wbemprox.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\SYSTEM32\wbemcomn.dll:wbemcomn.dll (00007FFB4FB90000), size: 520192 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\wbemcomn.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\system32\wbem\wbemsvc.dll:wbemsvc.dll (00007FFB4D4C0000), size: 81920 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\system32\wbem\wbemsvc.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\system32\wbem\fastprox.dll:fastprox.dll (00007FFB4DE10000), size: 999424 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\system32\wbem\fastprox.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\MMDevApi.dll:MMDevApi.dll (00007FFB50080000), size: 462848 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\MMDevApi.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\DEVOBJ.dll:DEVOBJ.dll (00007FFB53560000), size: 163840 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\DEVOBJ.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\PROPSYS.dll:PROPSYS.dll (00007FFB52180000), size: 1593344 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\PROPSYS.dll', fileVersion: 7.0.14393.0
+C:\WINDOWS\SYSTEM32\wdmaud.drv:wdmaud.drv (00007FFB50780000), size: 258048 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\wdmaud.drv', fileVersion: 10.0.14393.0
+C:\WINDOWS\SYSTEM32\ksuser.dll:ksuser.dll (00007FFB4C730000), size: 36864 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\ksuser.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\SYSTEM32\AVRT.dll:AVRT.dll (00007FFB4FFF0000), size: 45056 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\AVRT.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\SYSTEM32\AUDIOSES.DLL:AUDIOSES.DLL (00007FFB4B320000), size: 606208 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\AUDIOSES.DLL', fileVersion: 10.0.14393.594
+C:\WINDOWS\SYSTEM32\wintypes.dll:wintypes.dll (00007FFB51270000), size: 1269760 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\wintypes.dll', fileVersion: 10.0.14393.576
+C:\WINDOWS\SYSTEM32\msacm32.drv:msacm32.drv (00007FFB50770000), size: 53248 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\msacm32.drv', fileVersion: 10.0.14393.0
+C:\WINDOWS\SYSTEM32\MSACM32.dll:MSACM32.dll (00007FFB4AF60000), size: 114688 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\MSACM32.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\SYSTEM32\midimap.dll:midimap.dll (00007FFB50750000), size: 40960 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\midimap.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.14393.447_none_42191651c6827bb3\comctl32.dll:comctl32.dll (00007FFB4CC30000), size: 2592768 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.14393.447_none_42191651c6827bb3\comctl32.dll', fileVersion: 6.10.14393.447
+C:\WINDOWS\system32\sogoutsf.ime:sogoutsf.ime (00007FFB341E0000), size: 2007040 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\system32\sogoutsf.ime', fileVersion: 8.2.0.9335
+C:\WINDOWS\system32\MSIMG32.dll:MSIMG32.dll (00007FFB52D60000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\system32\MSIMG32.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\system32\SogouPy.ime:SogouPy.ime (00007FFB2EBD0000), size: 9121792 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\system32\SogouPy.ime', fileVersion: 8.2.0.9335
+C:\WINDOWS\SYSTEM32\OLEACC.dll:OLEACC.dll (00007FFB506E0000), size: 413696 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\OLEACC.dll', fileVersion: 7.2.14393.0
+C:\WINDOWS\SYSTEM32\ntmarta.dll:ntmarta.dll (00007FFB53D60000), size: 204800 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\ntmarta.dll', fileVersion: 10.0.14393.0
+D:\Program Files (x86)\SogouInput\8.2.0.9335\Resource.dll:Resource.dll (00000000114A0000), size: 905216 (result: 0), SymType: '-nosymbols-', PDB: 'D:\Program Files (x86)\SogouInput\8.2.0.9335\Resource.dll', fileVersion: 8.2.0.9335
+D:\Program Files (x86)\SogouInput\Components\PicFace\1.0.0.1630\PicFace64.dll:PicFace64.dll (00007FFB4F7A0000), size: 2318336 (result: 0), SymType: '-exported-', PDB: 'D:\Program Files (x86)\SogouInput\Components\PicFace\1.0.0.1630\PicFace64.dll', fileVersion: 1.0.0.1630
+C:\WINDOWS\SYSTEM32\xinput1_3.dll:xinput1_3.dll (00000000116B0000), size: 122880 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\xinput1_3.dll', fileVersion: 9.18.944.0
+C:\WINDOWS\SYSTEM32\CRYPTSP.dll:CRYPTSP.dll (00007FFB54420000), size: 94208 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\CRYPTSP.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\system32\rsaenh.dll:rsaenh.dll (00007FFB53E90000), size: 208896 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\system32\rsaenh.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\SYSTEM32\CRYPTBASE.dll:CRYPTBASE.dll (00007FFB54440000), size: 45056 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\CRYPTBASE.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL:dhcpcsvc6.DLL (00007FFB4C880000), size: 90112 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL', fileVersion: 10.0.14393.0
+C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL:dhcpcsvc.DLL (00007FFB4C560000), size: 106496 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL', fileVersion: 10.0.14393.0
+C:\Users\Administrator\AppData\Roaming\Baidu\Baidu\plugin\extends\youxijiasuqi\2.0.800.1217\NetDogs\201611720483357\NetDogDll64.dll:NetDogDll64.dll (00007FFB51020000), size: 614400 (result: 0), SymType: '-exported-', PDB: 'C:\Users\Administrator\AppData\Roaming\Baidu\Baidu\plugin\extends\youxijiasuqi\2.0.800.1217\NetDogs\201611720483357\NetDogDll64.dll', fileVersion: 2.0.800.1217
+C:\Windows\System32\rasadhlp.dll:rasadhlp.dll (00007FFB49240000), size: 40960 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\rasadhlp.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\System32\fwpuclnt.dll:fwpuclnt.dll (00007FFB4CF50000), size: 434176 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\System32\fwpuclnt.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\SYSTEM32\edputil.dll:edputil.dll (00007FFB3A570000), size: 270336 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\edputil.dll', fileVersion: 10.0.14393.0
+C:\WINDOWS\SYSTEM32\urlmon.dll:urlmon.dll (00007FFB45A50000), size: 1843200 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\urlmon.dll', fileVersion: 11.0.14393.479
+C:\WINDOWS\SYSTEM32\iertutil.dll:iertutil.dll (00007FFB4E360000), size: 2764800 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\iertutil.dll', fileVersion: 11.0.14393.447
+C:\WINDOWS\SYSTEM32\SspiCli.dll:SspiCli.dll (00007FFB54650000), size: 180224 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\SspiCli.dll', fileVersion: 10.0.14393.576
+C:\WINDOWS\SYSTEM32\DbgHelp.dll:DbgHelp.dll (00007FFB44640000), size: 1646592 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\DbgHelp.dll', fileVersion: 10.0.14321.1024
+C:\WINDOWS\SYSTEM32\dbgcore.DLL:dbgcore.DLL (00007FFB434C0000), size: 167936 (result: 0), SymType: '-exported-', PDB: 'C:\WINDOWS\SYSTEM32\dbgcore.DLL', fileVersion: 10.0.14321.1024
+
+========== OUTPUTING STACK TRACE ==================
+
+0x00007FFB0D318219 (mono) unity_mono_reflection_method_get_method
+0x00007FFB0D31A4B2 (mono) unity_mono_reflection_method_get_method
+0x00007FFB0D319B4D (mono) unity_mono_reflection_method_get_method
+0x00007FFB0D319B85 (mono) unity_mono_reflection_method_get_method
+0x00007FFB0D315F11 (mono) unity_mono_reflection_method_get_method
+0x00007FFB0D316ABD (mono) unity_mono_reflection_method_get_method
+0x00007FFB0D316C5C (mono) unity_mono_reflection_method_get_method
+0x00007FFB0D316E23 (mono) unity_mono_reflection_method_get_method
+0x00007FFB0D31576D (mono) unity_mono_reflection_method_get_method
+0x00007FFB0D31582A (mono) unity_mono_reflection_method_get_method
+0x00007FFB0D315990 (mono) unity_mono_reflection_method_get_method
+0x00007FFB0D23A2D2 (mono) mono_array_new_specific
+0x00000000050B09EB (Mono JIT Code) (wrapper managed-to-native) object:__icall_wrapper_mono_array_new_specific (intptr,int)
+0x000000000510F69F (Mono JIT Code) Mono.Globalization.Unicode.SortKeyBuffer:Initialize (System.Globalization.CompareOptions,int,string,bool)
+0x000000000510F481 (Mono JIT Code) Mono.Globalization.Unicode.SimpleCollator:GetSortKey (string,int,int,System.Globalization.CompareOptions)
+0x000000000510F3DC (Mono JIT Code) Mono.Globalization.Unicode.SimpleCollator:GetSortKey (string,System.Globalization.CompareOptions)
+0x000000000510F362 (Mono JIT Code) System.Globalization.CompareInfo:GetSortKey (string,System.Globalization.CompareOptions)
+0x000000000510F219 (Mono JIT Code) System.CultureAwareComparer:GetHashCode (string)
+0x0000000005117B11 (Mono JIT Code) System.Collections.Generic.Dictionary`2<object, object>:ContainsKey (object)
+0x0000000005117A3D (Mono JIT Code) ActionParam:get_Item (string)
+0x0000000005140935 (Mono JIT Code) ActionParam:Get<int> (string)
+0x00000000051402DF (Mono JIT Code) WebLogic:CallBack (ActionResult)
+0x0000000005140151 (Mono JIT Code) GameAction:OnCallback (ActionResult)
+0x000000000513FA3C (Mono JIT Code) Net:OnRespond (NetPackage)
+0x000000000513F925 (Mono JIT Code) Net:OnSocketRespond (SocketPackage)
+0x000000000513F216 (Mono JIT Code) Net:Update ()
+0x00000000050BF36B (Mono JIT Code) (wrapper runtime-invoke) object:runtime_invoke_void__this__ (object,intptr,intptr,intptr)
+0x00007FFB0D2E54A3 (mono) mono_set_defaults
+0x00007FFB0D2383F1 (mono) mono_runtime_invoke
+0x00007FF715210F7B (����) physx::shdfnd::Foundation::getNamedAllocMap
+0x00007FF715204778 (����) physx::shdfnd::Foundation::getNamedAllocMap
+0x00007FF7152070C1 (����) physx::shdfnd::Foundation::getNamedAllocMap
+  ERROR: SymGetSymFromAddr64, GetLastError: '试图访问无效的地址。
+' (Address: 00007FF714FD5DCF)
+0x00007FF714FD5DCF (����) 
+0x00007FF7150F4CEF (����) physx::shdfnd::Foundation::getNamedAllocMap
+0x00007FF7156BE777 (����) physx::shdfnd::Allocator::`default constructor closure'
+0x00007FF7156BE94A (����) physx::shdfnd::Allocator::`default constructor closure'
+0x00007FF7156C2478 (����) physx::shdfnd::Allocator::`default constructor closure'
+0x00007FF7157C7DD0 (����) physx::shdfnd::ErrorHandler::getMaxCallbackNum
+0x00007FFB57C78364 (KERNEL32) BaseThreadInitThunk
+0x00007FFB587B70D1 (ntdll) RtlUserThreadStart
+
+========== END OF STACKTRACE ===========
+
+**** Crash! ****

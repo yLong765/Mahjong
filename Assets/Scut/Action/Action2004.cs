@@ -19,7 +19,6 @@ public class Action2004 : BaseAction
 
     protected override void DecodePackage(NetReader reader)
     {
-        actionResult["playerId"] = reader.getInt();
         actionResult["target"] = reader.getInt();
         actionResult["StartNum"] = reader.getInt();
     }
@@ -27,6 +26,5 @@ public class Action2004 : BaseAction
     protected override void SendParameter(NetWriter writer, ActionParam actionParam)
     {
         writer.writeInt32("roomID", (int)actionParam["roomID"]);
-        writer.writeString("playerName", GameSetting.Instance.PlayerName);
     }
 }

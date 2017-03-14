@@ -44,9 +44,9 @@ public class WebLogic : WebBase {
                 Param["success"] = actionResult.Get<int>("success");
                 break;
 
-            case (int)ActionType.Room:
+            case (int)ActionType.JoinRoom:
                 Param["success"] = actionResult.Get<int>("success");
-                GameSetting.Instance.PlayerName = actionResult.Get<string>("playerName");
+                GameSetting.Instance.Playerid = actionResult.Get<int>("id");
                 break;
 
             case (int)ActionType.RoomMessage: 
@@ -67,14 +67,13 @@ public class WebLogic : WebBase {
                 break;
 
             case (int)ActionType.GetPlayerId:
-                Param["playerId"] = actionResult.Get<int>("playerId");
                 Param["target"] = actionResult.Get<int>("target");
                 Param["StartNum"] = actionResult.Get<int>("StartNum");
                 break;
         }
 
-        if (actionID == 2001 || actionID == 2004) SendEvnet(2, Param);
-        else SendEvnet(1, Param);
+        if (actionID == 2001 || actionID == 2004) SendEvnet(EventCode.WebToLogic, Param);
+        else SendEvnet(EventCode.WebToUI, Param);
 
         GameSetting.Instance.CanSend = true;
     }
@@ -84,8 +83,6 @@ public class WebLogic : WebBase {
         ActionParam Param = new ActionParam();
         int actionID = actionResult.Get<int>("ActionType");
         Param["ActionType"] = actionID;
-
-        Debug.Log("WebLogic : " + actionID);
 
         switch (actionID)
         {
@@ -104,12 +101,16 @@ public class WebLogic : WebBase {
             case (int)ActionType.playerIdRadio:
                 Param["num"] = actionResult.Get<int>("num");
                 Param["level"] = actionResult.Get<int>("level");
-                Param["PlayerId"] = actionResult.Get<int>("PlayerId");
+                Param["target"] = actionResult.Get<int>("target");
+                break;
+
+            case (int)ActionType.GameEnd:
+                Param["playerName"] = actionResult.Get<string>("playerName");
                 break;
         }
 
-        if (actionID == 3000 || actionID == 3002) SendEvnet(2, Param);
-        else SendEvnet(1, Param);
+        if (actionID == 3000 || actionID == 3002) SendEvnet(EventCode.WebToLogic, Param);
+        else SendEvnet(EventCode.WebToUI, Param);
     }
 
 }

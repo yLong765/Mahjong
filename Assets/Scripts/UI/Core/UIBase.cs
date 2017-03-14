@@ -37,12 +37,15 @@ public class UIBase : MonoBehaviour, IEventListener {
     {
         skinPath = Path;
     }
-
+    
     void Awake() { OnAwake(); }
     void Start() { OnStart(); }
     void Update() { OnUpdate(); }
     void OnDestroy() { }
 
+    /// <summary>
+    /// 总初始化函数
+    /// </summary>
     protected void Init()
     {
         InitSkin();

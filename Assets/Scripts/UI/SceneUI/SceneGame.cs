@@ -4,18 +4,18 @@ using System.Collections;
 
 public class SceneGame : SceneBase {
 
+    private static SceneGame _Instance;
+    public static SceneGame Instance { get { return _Instance; } }
+
+    /// <summary>
+    /// 初始化按钮位置
+    /// </summary>
     private Vector3 pos = new Vector3(420, -270, 0);
 
+    /// <summary>
+    /// 剩余牌数TextUI
+    /// </summary>
     private Text BrandNum;
-
-    private static SceneGame _Instance;
-    public static SceneGame Instance
-    {
-        get
-        {
-            return _Instance;
-        }
-    }
 
     protected override void OnAwake()
     {
@@ -77,7 +77,7 @@ public class SceneGame : SceneBase {
         }
         else if (BtObject.name.Equals("Ting"))
         {
-            LogicOfGame.Instance.RespondOperation(4);
+            LogicOfGame.Instance.ChangeTing();
         }
         else if (BtObject.name.Equals("Hu"))
         {

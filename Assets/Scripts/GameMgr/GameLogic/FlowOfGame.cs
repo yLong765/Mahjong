@@ -28,48 +28,32 @@ public class FlowOfGame : MonoBehaviour {
 
     void Start()
     {
-        Init();
-    }
-
-    private void Init()
-    {
         LogicOfGame.Instance.InitDate();
     }
 
-    public void InitTable()
+    public void Init()
     {
-        LogicOfGame.Instance.InitTable();
         SceneMgr.Instance.SceneSwitch(SceneState.SceneGame);
-        Invoke("InitHandDeal", 0.5f);
-    }
-
-    private void InitHandDeal()
-    {
+        LogicOfGame.Instance.InitTable();
         LogicOfGame.Instance.HandDealInWeb();
-        if (GameSetting.Instance.target != GameSetting.Instance.Playerid)
-            LogicOfGame.Instance.otherDeal();
     }
 
+    public bool HandDeal = false;
     public bool Deal = false;
-    public bool DealDone = false;
-    public bool InitDone = false;
+    public bool CanDeal = false;
 
     void Update()
     {
+        if (HandDeal)
+        {
+            HandDeal = false;
+            LogicOfGame.Instance.HandDeal();
+        }
         if (Deal)
         {
-            LogicOfGame.Instance.DealInWeb();
             Deal = false;
-            InitDone = true;
-        }
-        if (DealDone && InitDone)
-        {
-            LogicOfGame.Instance.Deal();
-            DealDone = false;
-        }
-        else
-        {
-            DealDone = false;
+            CanDeal = true;
+            LogicOfGame.Instance.DealInWeb();
         }
     }
 

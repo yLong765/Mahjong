@@ -2,17 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventNode {
-
+public enum EventCode
+{
     /// <summary>
-    /// 结点优先级
+    /// UI发送给Web
     /// </summary>
-    public int EventNodePriority { set; get; }
+    UIToWeb = 0,
+    /// <summary>
+    /// Web发送给UI
+    /// </summary>
+    WebToUI,
+    /// <summary>
+    /// UI发送给Logic
+    /// </summary>
+    UIToLogic,
+    /// <summary>
+    /// Logic发送给UI
+    /// </summary>
+    LogicToUI,
+    /// <summary>
+    /// Logic发送给Web
+    /// </summary>
+    LogicToWeb,
+    /// <summary>
+    /// Web发送给Logic
+    /// </summary>
+    WebToLogic,
+}
+
+public class EventNode {
 
     /// <summary>
     /// 所有消息集合
     /// </summary>
-    private Dictionary<int, List<IEventListener>> mListeners = new Dictionary<int, List<IEventListener>>();
+    private Dictionary<int, IEventListener> mListeners = new Dictionary<int, IEventListener>();
 
     /// <summary>
     /// 消息结点
@@ -66,40 +89,35 @@ public class EventNode {
     /// <param name="id">消息id</param>
     /// <param name="listener">消息监听器</param>
     /// <returns>是否能挂接</returns>
-    public bool AddEventListener(int id, IEventListener listener)
+    public bool AddEventListener(EventCode eventCode, IEventListener listener)
     {
         if (listener == null)
         {
             return false;
         }
-        if (!mListeners.ContainsKey(id))
+        if (!mListeners.ContainsKey((int)eventCode))
         {
-            mListeners.Add(id, new List<IEventListener>() { listener });
+            mListeners.Add((int)eventCode, listener);
             return true;
         }
-        if (mListeners[id].Contains(listener))
-        {
-            return false;
-        }
-        mListeners[id].Clear();
-        mListeners[id].Add(listener);
+        mListeners.Remove((int)eventCode);
+        mListeners.Add((int)eventCode, listener);
         return true;
     }
 
-    public bool RemoveEventListener(int id, IEventListener listener)
+    public bool RemoveEventListener(EventCode eventCode)
     {
-        if (mListeners.ContainsKey(id) && mListeners[id].Contains(listener))
+        if (mListeners.ContainsKey((int)eventCode))
         {
-            mListeners[id].Remove(listener);
+            mListeners.Remove((int)eventCode);
             return true;
         }
-        mListeners[id].Add(listener);
         return false;
     }
 
-    public void SendEvnet(int id, ActionParam param)
+    public void SendEvnet(EventCode eventCode, ActionParam param)
     {
-        DispatchEvent(id, param);
+        DispatchEvent(eventCode, param);
     }
 
     /// <summary>
@@ -108,13 +126,13 @@ public class EventNode {
     /// <param name="id">消息id</param>
     /// <param name="param"></param>
     /// <returns>中断消息为false</returns>
-    private bool DispatchEvent(int id, ActionParam param)
+    private bool DispatchEvent(EventCode eventCode, ActionParam param)
     {
         for (int i = 0; i < nodeList.Count; i++)
         {
-            if (nodeList[i].DispatchEvent(id, param)) return true;
+            if (nodeList[i].DispatchEvent(eventCode, param)) return true;
         }
-        return TriggerEvent(id, param);
+        return TriggerEvent(eventCode, param);
     }
 
     /// <summary>
@@ -123,22 +141,18 @@ public class EventNode {
     /// <param name="id"></param>
     /// <param name="param"></param>
     /// <returns></returns>
-    private bool TriggerEvent(int id, ActionParam param)
+    private bool TriggerEvent(EventCode eventCode, ActionParam param)
     {
-        if (!mListeners.ContainsKey(id))
+        if (!mListeners.ContainsKey((int)eventCode))
         {
             return false;
         }
 
-        List<IEventListener> listeners = mListeners[id];
-
-        for (int i = 0; i < listeners.Count; i++)
+        if (mListeners[(int)eventCode].HandleEvent((int)eventCode, param))
         {
-            if (listeners[i].HandleEvent(id, param))
-            {
-                return true;
-            }
+            return true;
         }
+
         return false;
     }
 

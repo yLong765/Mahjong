@@ -21,7 +21,6 @@ public class SceneManager {
     {
         string name = type.ToString();
         Application.LoadLevel(name);
-        SceneMgr.Instance.SceneSwitch(SceneState.SceneGame);
     }
 
 }

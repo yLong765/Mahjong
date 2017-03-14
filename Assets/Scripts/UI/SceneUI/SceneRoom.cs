@@ -30,10 +30,6 @@ public class SceneRoom : SceneBase {
 
     protected override void onClick(GameObject BtObject)
     {
-        if (BtObject.name.Equals("joinBt"))
-        {
-            Debug.Log("join");
-        }
         if (BtObject.name.Equals("createBt"))
         {
             PanelMgr.Instance.OpenPanel(PanelState.PanelCreateRoom);
@@ -43,12 +39,14 @@ public class SceneRoom : SceneBase {
             int roomID = int.Parse(BtObject.transform.parent.gameObject.name);
             string roomName = BtObject.transform.parent.Find("roomName").GetComponent<Text>().text;
 
+            Debug.Log(roomName);
+
             ActionParam param = new ActionParam();
             param["roomID"] = roomID;
             param["roomName"] = roomName;
-            param["roomOperation"] = 1;
+            param["playerName"] = GameSetting.Instance.PlayerName;
 
-            WebLogic.Instance.Send((int)ActionType.Room, param);
+            WebLogic.Instance.Send((int)ActionType.JoinRoom, param);
 
         }
     }
@@ -59,7 +57,7 @@ public class SceneRoom : SceneBase {
 
         switch (id)
         {
-            case (int)ActionType.Room:
+            case (int)ActionType.JoinRoom:
                 if ((int)param["success"] != -1)
                 {
                     GameSetting.Instance.roomID = (int)param["success"];
@@ -93,7 +91,7 @@ public class SceneRoom : SceneBase {
             EventTriggerListener.Get(room.transform.Find("Btback").gameObject).onClick = onClick;
         }
         roomID++;
-        if (roomID < 10)
+        if (roomID < 20)
         {
             ActionParam param = new ActionParam();
             param["roomID"] = roomID;

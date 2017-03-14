@@ -21,7 +21,7 @@ public class Action3002 : BaseAction
     {
         actionResult["num"] = reader.getInt();
         actionResult["level"] = reader.getInt();
-        actionResult["PlayerId"] = reader.getInt();
+        actionResult["target"] = reader.getInt();
         WebLogic.Instance.RadioCallBack(actionResult);
     }
 

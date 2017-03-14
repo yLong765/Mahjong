@@ -63,8 +63,27 @@ public class ResourceMgr : MonoBehaviour {
     /// <returns>实例化物体</returns>
     public GameObject CreateGameObject(string path, bool isCache)
     {
-        GameObject gb = LoadResource<GameObject>(path, isCache);
+        GameObject gb = LoadResource<GameObject>(path, true);
         return Instantiate(gb) as GameObject;
+    }
+
+    /// <summary>
+    /// 实例化牌，并初始化位置
+    /// </summary>
+    /// <param name="path"></param>
+    /// <param name="isCache"></param>
+    /// <param name="pos"></param>
+    /// <param name="rot"></param>
+    /// <param name="sca"></param>
+    /// <returns></returns>
+    public GameObject CreateBrand(string path, Vector3 pos, Quaternion rot)
+    {
+        GameObject gb = Instantiate(LoadResource<GameObject>(path, true)) as GameObject;
+        Brand mb = gb.AddComponent<Brand>();
+        mb.transform.localPosition = pos;
+        mb.transform.localRotation = rot;
+        mb.transform.localScale = Vector3.one;
+        return gb;
     }
 
 }

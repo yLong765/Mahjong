@@ -2,11 +2,11 @@
 using System.Collections;
 using System;
 
-public class SceneBase : UIBase, IEventListener {
+public class SceneBase : UIBase {
 
     public virtual void OnInit()
     {
-        WebLogic.Instance.AddEventListener(1, this);
+        WebLogic.Instance.AddEventListener(EventCode.WebToUI, this);
         Init();
     }
 
@@ -33,4 +33,9 @@ public enum SceneState
     /// 游戏界面
     /// </summary>
     SceneGame,
+
+    /// <summary>
+    /// 游戏结束
+    /// </summary>
+    SceneGameEnd,
 }

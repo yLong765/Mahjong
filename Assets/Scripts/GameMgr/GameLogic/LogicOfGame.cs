@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using System.Collections.Generic;
 
 public class LogicOfGame : MonoBehaviour, IEventListener {
 
@@ -24,11 +25,14 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
     void Awake()
     {
         _Instance = this;
-        WebLogic.Instance.AddEventListener(2, this);
-        Debug.Log("Awake Done");
+        WebLogic.Instance.AddEventListener(EventCode.WebToLogic, this);
     }
 
     #endregion
+
+    #region 数据定义
+
+    private Player[] players = new Player[4];
 
     /// <summary>
     /// 吃碰杠位置
@@ -65,26 +69,29 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
     /// </summary>
     private Vector3[] DealRot = new Vector3[4];
 
-    private OtherPlayer[] Players = new OtherPlayer[4];
-
     private GameObject LastShowBrand = null;
     private int LastShowMan;
 
     private int PSpos = 0;
+
+    #endregion
+
+    #region 游戏逻辑
 
     /// <summary>
     /// 初始化数据
     /// </summary>
     public void InitDate()
     {
+        players[0] = new Player();
+        players[1] = new Player();
+        players[2] = new Player();
+        players[3] = new Player();
+
         ActionParam param = new ActionParam();
         param["roomID"] = GameSetting.Instance.roomID;
 
         WebLogic.Instance.Send((int)ActionType.GetPlayerId, param);
-
-        Players[1] = new OtherPlayer();
-        Players[2] = new OtherPlayer();
-        Players[3] = new OtherPlayer();
 
         Oppos[0] = new Vector3(3f, 0, -3.5f);
         Oppos[1] = new Vector3(3.5f, 0, 3f);
@@ -124,8 +131,6 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
         DealPos[0] = new Vector3(0, 0.5f, -3.5f);
 
         DealRot[0] = new Vector3(0, 0, -90);
-
-        Debug.Log("InitDate Done");
     }
 
     /// <summary>
@@ -166,18 +171,13 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
                 {
                     Vector3 Tpos = pos[p] + C[p] * j;
                     if (k == 1) Tpos.y = 0;
-
-                    GameObject gb = ResourceMgr.Instance.CreateGameObject("Mahjong/mj36", true);
-                    gb.gameObject.name = num.ToString();
-                    gb.transform.localPosition = Tpos;
-                    gb.transform.localRotation = Quaternion.Euler(rot[p]);
-                    gb.transform.localScale = Vector3.one;
+                    
+                    GameObject gb = ResourceMgr.Instance.CreateBrand("Mahjong/mj36", Tpos, Quaternion.Euler(rot[p]));
+                    gb.name = num.ToString();
                     num++;
                 }
             }
         }
-
-        Debug.Log("InitTable Done");
     }
 
     /// <summary>
@@ -185,16 +185,10 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
     /// </summary>
     public void HandDealInWeb()
     {
-        ActionParam param = new ActionParam();
-
-        param["roomID"] = GameSetting.Instance.roomID;
-
         for (int i = 0; i < 13; i++)
         {
-            WebLogic.Instance.Send((int)ActionType.Logic, param);
+            DealInWeb();
         }
-
-        Debug.Log("HandDealInWeb Done");
 
         StartCoroutine(CheckHandDeal());
     }
@@ -204,25 +198,44 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
     /// </summary>
     public void HandDeal()
     {
+        Vector3[] pos = new Vector3[4];
+        pos[0] = new Vector3(-3.45f, 0.5f, -3.4f);
+        pos[1] = new Vector3(3.5f, 0.1f, -1.8f);
+        pos[2] = new Vector3(1.8f, 0.1f, 3.5f);
+        pos[3] = new Vector3(-3.5f, 0.1f, 1.8f);
 
-        Vector3 pos = new Vector3(-3.95f, 0.5f, -3.5f);
-        Vector3 rot = new Vector3(0, 0, -90);
-        Vector3 sca = new Vector3(1.5f, 1.5f, 1.5f);
+        Vector3[] rot = new Vector3[4];
+        rot[0] = new Vector3(-10, 0, -90);
+        rot[1] = new Vector3(-90, 180, 0);
+        rot[2] = new Vector3(-90, 90, 0);
+        rot[3] = new Vector3(-90, 0, 0);
 
-        MyPlayer.Instance.Sort();
+        Vector3[] C = new Vector3[4];
+        C[0] = new Vector3(0.45f, 0, 0);
+        C[1] = new Vector3(0, 0, 0.3f);
+        C[2] = new Vector3(-0.3f, 0, 0);
+        C[3] = new Vector3(0, 0, -0.3f);
 
-        for (int i = 0; i < 13; i++)
+        Vector3 sca = Vector3.one;
+
+        players[0].Sort();
+        players[1].webInit();
+        players[2].webInit();
+        players[3].webInit();
+
+        for (int i = 0; i < 4; i++)
         {
-            int brand = MyPlayer.Instance.Get(i);
-            GameObject gb = MyPlayer.Instance.GetOb(i);
-            pos.x += 0.45f;
-            gb.name = brand.ToString();
-            gb.transform.localPosition = pos;
-            gb.transform.localRotation = Quaternion.Euler(rot);
-            gb.transform.localScale = sca;
-            gb.AddComponent<TBrand>();
-            gb.AddComponent<BoxCollider>();
-            gb.GetComponent<TBrand>().setPos(pos);
+            for (int j = 0; j < 13; j++)
+            {
+                pos[i] += C[i];
+                if (i == 0) sca = Vector3.one * 1.5f;
+                else sca = Vector3.one;
+
+                Brand mBrand = players[i].Get(j);
+                mBrand.Init(pos[i], Quaternion.Euler(rot[i]), sca);
+                if (i == 0) mBrand.AddBox();
+            }
+            
         }
 
         int Begin = GameSetting.Instance.StartNum * 2 - 1;
@@ -234,15 +247,17 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
 
         PSpos = Begin + 52;
 
-        Debug.Log("HandDeal Done");
+        if (GameSetting.Instance.Playerid == GameSetting.Instance.target)
+        {
+            FlowOfGame.Instance.Deal = true;
+        }
 
-        otherHandDeal();
     }
 
     /// <summary>
     /// 其他玩家手牌
     /// </summary>
-    private void otherHandDeal()
+    /*private void otherHandDeal()
     {
         Vector3[] pos = new Vector3[3];
         pos[0] = new Vector3(3.5f, 0.1f, -1.8f);
@@ -262,10 +277,8 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
             for (int j = 0; j < 13; j++)
             {
                 GameObject gb = Players[i + 1].GetOb(j);
-                gb.transform.localPosition = pos[i];
-                gb.transform.localRotation = Quaternion.Euler(rot[i]);
-                gb.transform.localScale = Vector3.one;
-                pos[i] += C[i];
+                Brand mBrand = gb.AddComponent<Brand>();
+                mBrand.Init(pos[i], Quaternion.Euler(rot[i]), Vector3.one);
             }
         }
 
@@ -274,6 +287,7 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
         if (GameSetting.Instance.Playerid == GameSetting.Instance.target)
             FlowOfGame.Instance.Deal = true;
     }
+    */
 
     /// <summary>
     /// 向服务端发送发牌请求
@@ -281,47 +295,70 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
     public void DealInWeb()
     {
         ActionParam param = new ActionParam();
-
         param["roomID"] = GameSetting.Instance.roomID;
 
         WebLogic.Instance.Send((int)ActionType.Logic, param);
-
-        Debug.Log("DealInWeb Done");
     }
 
     /// <summary>
     /// 发牌
     /// </summary>
-    public void Deal()
+    public void Deal(int playerId)
     {
-        Vector3 pos = new Vector3(-3.95f, 0.5f, -3.5f);
-        Vector3 rot = new Vector3(0, 0, -90);
-        Vector3 sca = new Vector3(1.5f, 1.5f, 1.5f);
+        int id = ChangePlayerId(playerId);
 
-        int brand = MyPlayer.Instance.GetEnd();
+        Vector3[] pos = new Vector3[4];
+        pos[0] = new Vector3(-3.45f, 0.5f, -3.4f);
+        pos[1] = new Vector3(3.5f, 0.1f, -1.8f);
+        pos[2] = new Vector3(1.8f, 0.1f, 3.5f);
+        pos[3] = new Vector3(-3.5f, 0.1f, 1.8f);
 
-        pos.x += 0.45f * (MyPlayer.Instance.getSize() - 1) + 0.55f;
+        Vector3[] rot = new Vector3[4];
+        rot[0] = new Vector3(-10, 0, -90);
+        rot[1] = new Vector3(-90, 180, 0);
+        rot[2] = new Vector3(-90, 90, 0);
+        rot[3] = new Vector3(-90, 0, 0);
 
-        GameObject gb = MyPlayer.Instance.GetObEnd();
-        gb.name = brand.ToString();
-        gb.transform.localPosition = pos;
-        gb.transform.localRotation = Quaternion.Euler(rot);
-        gb.transform.localScale = sca;
-        gb.AddComponent<TBrand>();
-        gb.AddComponent<BoxCollider>();
-        gb.GetComponent<TBrand>().setPos(pos);
+        Vector3[] C = new Vector3[4];
+        C[0] = new Vector3(0.55f, 0, 0);
+        C[1] = new Vector3(0, 0, 0.4f);
+        C[2] = new Vector3(-0.4f, 0, 0);
+        C[3] = new Vector3(0, 0, -0.4f);
+
+        Vector3[] C1 = new Vector3[4];
+        C1[0] = new Vector3(0.45f, 0, 0);
+        C1[1] = new Vector3(0, 0, 0.3f);
+        C1[2] = new Vector3(-0.3f, 0, 0);
+        C1[3] = new Vector3(0, 0, -0.3f);
+
+        Vector3 sca = Vector3.one;
+        if (id == 0) sca *= 1.5f;
+
+        pos[id] += C1[id] * (players[id].getSize() - 1) + C[id];
+
+        Brand mBrand = players[id].GetEnd();
+        mBrand.Init(pos[id], Quaternion.Euler(rot[id]), sca);
+        if (id == 0) mBrand.AddBox();
 
         Destroy(GameObject.Find(PSpos.ToString()).gameObject);
         PSpos++;
 
         SceneGame.Instance.ChangePS();
 
-        Debug.Log("Deal Done");
+        if (playerId == GameSetting.Instance.Playerid)
+        {
+            if (players[0].isTing())
+                SceneGame.Instance.showButton("Ting");
+            if (players[0].isHu(mBrand.id))
+                SceneGame.Instance.showButton("Hu");
+        }
+
     }
 
     /// <summary>
     /// 其他玩家发牌
     /// </summary>
+    /*
     public void otherDeal()
     {
         Vector3[] pos = new Vector3[4];
@@ -356,9 +393,8 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
         Players[id].AddOb();
 
         GameObject gb = Players[id].GetEndOb();
-        gb.transform.localPosition = pos[id];
-        gb.transform.localRotation = Quaternion.Euler(rot[id]);
-        gb.transform.localScale = Vector3.one;
+        Brand mBrand = gb.AddComponent<Brand>();
+        mBrand.Init(pos[id], Quaternion.Euler(rot[id]), Vector3.one);
 
         Destroy(GameObject.Find(PSpos.ToString()).gameObject);
         PSpos++;
@@ -366,80 +402,72 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
         SceneGame.Instance.ChangePS();
 
     }
+    */
 
     /// <summary>
     /// 上一张点击牌
     /// </summary>
-    private GameObject LastObject;
+    private Brand LastBrand;
 
     /// <summary>
     /// 点击出牌
     /// </summary>
     /// <param name="gb">点击牌</param>
-    public void MouseClick(GameObject gb)
+    public void MouseClick(Brand mBrand)
     {
-        int num = int.Parse(gb.name);
-        if (LastObject == gb)
+        int num = mBrand.id;
+        if (LastBrand == mBrand)
         {
             if (GameSetting.Instance.target == GameSetting.Instance.Playerid)
             {
-                ShowBrand(num);
-                gb.GetComponent<TBrand>().OnClickShow();
+                ShowBrand(mBrand);
             }
             else
             {
-                LastObject.GetComponent<TBrand>().Down();
-                LastObject = null;
+                mBrand.moveDown();
+                LastBrand = null;
             }            
         }
-        else if (LastObject != null)
+        else if (LastBrand != null)
         {
-            LastObject.GetComponent<TBrand>().Down();
-            gb.GetComponent<TBrand>().OnClickUp();
-            LastObject = gb;
+            LastBrand.moveDown();
+            mBrand.moveUp();
+            LastBrand = mBrand;
         }
         else
         {
-            gb.GetComponent<TBrand>().OnClickUp();
-            LastObject = gb;
+            mBrand.moveUp();
+            LastBrand = mBrand;
         }
     }
 
     /// <summary>
     /// 出牌
     /// </summary>
-    public void ShowBrand(int num)
+    public void ShowBrand(Brand mBrand)
     {
         ActionParam param = new ActionParam();
 
         param["roomID"] = GameSetting.Instance.roomID;
-        param["brand"] = num;
+        param["brand"] = mBrand.id;
         param["playerId"] = GameSetting.Instance.Playerid;
 
         WebLogic.Instance.Send((int)ActionType.RadioBrand, param);
 
-        int p = -1;
+        players[0].Remove(mBrand);
 
-        if ((p = MyPlayer.Instance.FindId(LastObject)) != -1)
+        players[0].Sort();
+
+        Vector3 pos = new Vector3(-3.45f, 0.5f, -3.4f);
+
+        for (int i = 0; i < players[0].getSize(); i++)
         {
-            MyPlayer.Instance.Remove(p);
-        }
-
-        MyPlayer.Instance.Sort();
-
-        Vector3 pos = new Vector3(-3.95f, 0.5f, -3.5f);
-
-        for (int i = 0; i < MyPlayer.Instance.getSize(); i++)
-        {
-            GameObject gb = MyPlayer.Instance.GetOb(i);
+            Brand br = players[0].Get(i);
             pos.x += 0.45f;
-            gb.transform.localPosition = pos;
-            gb.GetComponent<TBrand>().setPos(pos);
+            br.setPos(pos);
         }
 
-        GameSetting.Instance.target = -1;
-
-        LastObject = null;
+        LastBrand = null;
 
         RespondOperation(0);
     }
@@ -457,6 +485,8 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
         return k;
     }
 
+    private bool lll = true;
+
     /// <summary>
     /// 其他玩家出牌展示
     /// </summary>
@@ -466,12 +496,9 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
     {
         int id = ChangePlayerId(playerid);
 
-        GameObject g = ResourceMgr.Instance.CreateGameObject("Mahjong/mj" + num.ToString(), true);
-        g.transform.localPosition = showPos[id];
-        g.transform.localRotation = Quaternion.Euler(Oprot[id]);
-        g.transform.localScale = Vector3.one;
+        GameObject g = ResourceMgr.Instance.CreateBrand("Mahjong/mj" + num, showPos[id], Quaternion.Euler(Oprot[id]));
+        
         showLastP[id] = showPos[id];
-
         showPos[id] += showC[id];
         showTime[id]++;
         if (showTime[id] % 5 == 0)
@@ -485,7 +512,7 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
 
         if (playerid != GameSetting.Instance.Playerid)
         {
-            Players[id].RemoveEndGb();
+            players[id].Remove(players[id].getSize() - 1);
             ShowOperation(num);
         }
     }
@@ -505,30 +532,29 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
 
         bool Guo = true;
 
-        if (MyPlayer.Instance.isHu(num))
+        if (players[0].isHu(num))
         {
             Guo = false;
             SceneGame.Instance.showButton("Hu");
         }
-        if (MyPlayer.Instance.isTing())
-        {
-            Guo = false;
-            SceneGame.Instance.showButton("Ting");
-        }
-        if (MyPlayer.Instance.isGang(num))
+        if (players[0].isGang(num))
         {
             Guo = false;
             SceneGame.Instance.showButton("Gang");
         }
-        if (MyPlayer.Instance.isPeng(num))
+        if (players[0].isPeng(num))
         {
             Guo = false;
             SceneGame.Instance.showButton("Peng");
         }
-        if (MyPlayer.Instance.isChi(num))
+        if (players[0].isChi(num))
         {
-            Guo = false;
-            SceneGame.Instance.showButton("Chi");
+            int o = GameSetting.Instance.Playerid - GameSetting.Instance.target;
+            if (o == 1 || o == -3)
+            {
+                Guo = false;
+                SceneGame.Instance.showButton("Chi");
+            }
         }
 
         if (Guo)
@@ -543,43 +569,35 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
     /// <param name="num"></param>
     /// <param name="playerid"></param>
     /// <param name="level"></param>
-    public void ShowOp(int num, int playerid, int level)
+    public void ShowOp(int num, int target, int level)
     {
-        int id = ChangePlayerId(playerid);
-
-        Debug.Log(num);
+        int id = ChangePlayerId(target);
 
         switch (level)
         {
             case 1:
                 for (int i = 2; i >= 0; i--)
                 {
-                    GameObject gb = ResourceMgr.Instance.CreateGameObject("Mahjong/mj" + (num + i), true);
-                    gb.transform.localPosition = Oppos[id];
-                    gb.transform.localRotation = Quaternion.Euler(Oprot[id]);
-                    gb.transform.localScale = Vector3.one;
+                    ResourceMgr.Instance.CreateBrand("Mahjong/mj" + (num + i), Oppos[id], Quaternion.Euler(Oprot[id]));
                     Oppos[id] += OpC[id];
                 }
                 break;
             case 2:
                 for (int i = 0; i < 3; i++)
                 {
-                    GameObject gb = ResourceMgr.Instance.CreateGameObject("Mahjong/mj" + num, true);
-                    gb.transform.localPosition = Oppos[id];
-                    gb.transform.localRotation = Quaternion.Euler(Oprot[id]);
-                    gb.transform.localScale = Vector3.one;
+                    ResourceMgr.Instance.CreateBrand("Mahjong/mj" + num, Oppos[id], Quaternion.Euler(Oprot[id]));
                     Oppos[id] += OpC[id];
                 }
                 break;
             case 3:
                 for (int i = 0; i < 4; i++)
                 {
-                    GameObject gb = ResourceMgr.Instance.CreateGameObject("Mahjong/mj" + num, true);
-                    gb.transform.localPosition = Oppos[id];
-                    gb.transform.localRotation = Quaternion.Euler(Oprot[id]);
-                    gb.transform.localScale = Vector3.one;
+                    ResourceMgr.Instance.CreateBrand("Mahjong/mj" + num, Oppos[id], Quaternion.Euler(Oprot[id]));
                     Oppos[id] += OpC[id];
                 }
+                break;
+            case 5:
+                GameEnd();
                 break;
         }
 
@@ -593,15 +611,21 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
         if (GameSetting.Instance.Playerid == GameSetting.Instance.target)
         {
             OpAnims(level);
-            if (level == 0) FlowOfGame.Instance.Deal = true;
+            if (players[0].isTing())
+                SceneGame.Instance.showButton("Ting");
+            if (level == 0 || level == 3) FlowOfGame.Instance.Deal = true;
         }
         else
         {
-            Players[id].Operation(level);
+            players[id].webRemoveOperator(level);
+            if (level == 0 || level == 3) Deal(GameSetting.Instance.target);
         }
 
     }
 
+    /// <summary>
+    /// Chi位置
+    /// </summary>
     int[] ChiPos = new int[2];
 
     /// <summary>
@@ -619,7 +643,7 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
     /// </summary>
     public void ChangeChi()
     {
-        int[] cc = MyPlayer.Instance.chi;
+        int[] cc = players[0].chi;
 
         g = 0;
 
@@ -649,13 +673,13 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
             Mouse.Instance.Chi = true;
             for (int i = 0; i < g; i++)
             {
-                MyPlayer.Instance.GetOb(c[i, 0]).GetComponent<TBrand>().OnClickUp();
-                MyPlayer.Instance.GetOb(c[i, 1]).GetComponent<TBrand>().OnClickUp();
+                players[0].Get(c[i, 0]).moveUp();
+                players[0].Get(c[i, 1]).moveUp();
             }
         }
         else
         {
-            if (MyPlayer.Instance.Get(c[0, 0]) < numOp) numOp = MyPlayer.Instance.Get(c[0, 0]);
+            if (players[0].Get(c[0, 0]).id < numOp) numOp = players[0].Get(c[0, 0]).id;
             ChiPos[0] = c[0, 0];
             ChiPos[1] = c[0, 1];
             RespondOperation(1);
@@ -668,14 +692,14 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
     /// </summary>
     /// <param name="gb"></param>
     /// <param name="Click"></param>
-    public void ChangeAnimation(GameObject gb, bool Click)
+    public void ChangeAnimation(Brand mBrand, bool Click)
     {
-        if (gb == null)
+        if (mBrand == null)
         {
             for (int i = 0; i < g; i++)
             {
-                MyPlayer.Instance.GetOb(c[i, 0]).GetComponent<TBrand>().OnClickUp();
-                MyPlayer.Instance.GetOb(c[i, 1]).GetComponent<TBrand>().OnClickUp();
+                players[0].Get(c[i, 0]).moveUp();
+                players[0].Get(c[i, 1]).moveUp();
             }
             return;
         }
@@ -684,9 +708,9 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
 
         for (int i = 0; i < g; i++)
         {
-            MyPlayer.Instance.GetOb(c[i, 0]).GetComponent<TBrand>().Down();
-            MyPlayer.Instance.GetOb(c[i, 1]).GetComponent<TBrand>().Down();
-            if (MyPlayer.Instance.GetOb(c[i, 0]) == gb)
+            players[0].Get(c[i, 0]).moveDown();
+            players[0].Get(c[i, 1]).moveDown();
+            if (players[0].Get(c[i, 0]) == mBrand)
             {
                 tt = i;
             }
@@ -696,62 +720,112 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
         {
             if (Click)
             {
-                if (MyPlayer.Instance.Get(c[tt, 0]) < numOp) numOp = MyPlayer.Instance.Get(c[tt, 0]);
+                if (players[0].Get(c[tt, 0]).id < numOp) numOp = players[0].Get(c[tt, 0]).id;
                 ChiPos[0] = c[tt, 0];
                 ChiPos[1] = c[tt, 1];
                 RespondOperation(1);
             }
             else
             {
-                MyPlayer.Instance.GetOb(c[tt, 0]).GetComponent<TBrand>().OnClickUp();
-                MyPlayer.Instance.GetOb(c[tt, 1]).GetComponent<TBrand>().OnClickUp();
+                players[0].Get(c[tt, 0]).moveUp();
+                players[0].Get(c[tt, 1]).moveUp();
             }
         }
         else
         {
             for (int i = 0; i < g; i++)
             {
-                MyPlayer.Instance.GetOb(c[i, 0]).GetComponent<TBrand>().OnClickUp();
-                MyPlayer.Instance.GetOb(c[i, 1]).GetComponent<TBrand>().OnClickUp();
+                players[0].Get(c[i, 0]).moveUp();
+                players[0].Get(c[i, 1]).moveUp();
             }
         }
     }
 
+    /// <summary>
+    /// 吃碰杠消除
+    /// </summary>
+    /// <param name="level"></param>
     public void OpAnims(int level)
     {
         switch (level)
         {
             case 1:
-                MyPlayer.Instance.Remove(ChiPos[1]);
-                MyPlayer.Instance.Remove(ChiPos[0]);
+                players[0].Remove(ChiPos[1]);
+                players[0].Remove(ChiPos[0]);
                 break;
 
             case 2:
-                int[] P = MyPlayer.Instance.peng;
-                MyPlayer.Instance.Remove(P[1]);
-                MyPlayer.Instance.Remove(P[0]);
+                int[] P = players[0].peng;
+                players[0].Remove(P[1]);
+                players[0].Remove(P[0]);
                 break;
 
             case 3:
-                int[] G = MyPlayer.Instance.gang;
-                MyPlayer.Instance.Remove(G[2]);
-                MyPlayer.Instance.Remove(G[1]);
-                MyPlayer.Instance.Remove(G[0]);
+                int[] G = players[0].gang;
+                players[0].Remove(G[2]);
+                players[0].Remove(G[1]);
+                players[0].Remove(G[0]);
                 break;
         }
 
-        MyPlayer.Instance.Sort();
+        players[0].Sort();
 
-        Vector3 pos = new Vector3(-3.95f, 0.5f, -3.5f);
+        Vector3 pos = new Vector3(-3.45f, 0.5f, -3.4f);
 
-        for (int i = 0; i < MyPlayer.Instance.getSize(); i++)
+        for (int i = 0; i < players[0].getSize(); i++)
         {
-            GameObject gb = MyPlayer.Instance.GetOb(i);
+            Brand br = players[0].Get(i);
             pos.x += 0.45f;
-            gb.transform.localPosition = pos;
-            gb.GetComponent<TBrand>().setPos(pos);
+            br.setPos(pos);
         }
 
+    }
+
+    /// <summary>
+    /// 选择听什么牌
+    /// </summary>
+    public void ChangeTing()
+    {
+        int size = players[0].tings.Count;
+
+        for (int i = 0; i < size; i++)
+        {
+            if (players[0].tings[i] != null)
+            {
+                players[0].Get(i).moveUp();
+            }
+        }
+
+        Mouse.Instance.Ting = true;
+    }
+
+    /// <summary>
+    /// 听牌选择动画
+    /// </summary>
+    /// <param name="mbrand"></param>
+    /// <param name="Click"></param>
+    public void TingAniamtion(Brand mbrand, bool Click)
+    {
+        if (Click)
+        {
+            if (mbrand != null)
+            {
+                int j = players[0].GetId(mbrand);
+                if (players[0].tings[j] != null)
+                {
+                    players[0].Hus = null;
+                    players[0].Hus = players[0].tings[j];
+                    
+                    for (int i = 0; i < players[0].getSize(); i++)
+                    {
+                        players[0].Get(i).moveDown();
+                    }
+
+                    ShowBrand(mbrand);
+                    Mouse.Instance.Ting= false;
+                }
+            }
+        }
     }
 
     /// <summary>
@@ -771,6 +845,37 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
     }
 
     /// <summary>
+    /// 检查手牌获取
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator CheckHandDeal()
+    {
+        yield return new WaitForSeconds(1f);
+        if (players[0].getSize() == 13)
+        {
+            FlowOfGame.Instance.HandDeal = true;
+        }
+        else
+        {
+            StartCoroutine(CheckHandDeal());
+        }
+    }
+
+    /// <summary>
+    /// 游戏结束
+    /// </summary>
+    /// <returns></returns>
+    public bool GameEnd()
+    {
+        SceneMgr.Instance.SceneSwitch(SceneState.SceneGameEnd);
+        return true;
+    }
+
+    #endregion
+
+    #region 事件
+
+    /// <summary>
     /// 事件响应
     /// </summary>
     /// <param name="id">事件id</param>
@@ -787,48 +892,35 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
                 int brand = (int)param["brand"];
                 int playerid = (int)param["playerid"];
                 OtherShowBrand(brand, playerid);
+
                 break;
 
             case (int)ActionType.Logic:
                 brand = (int)param["brand"];
-                MyPlayer.Instance.Add(brand);
-                FlowOfGame.Instance.DealDone = true;
+                players[0].Add(brand);
+                if (FlowOfGame.Instance.CanDeal)
+                {
+                    Deal(GameSetting.Instance.Playerid);
+                }
                 break;
 
             case (int)ActionType.playerIdRadio:
                 int num = (int)param["num"];
                 int level = (int)param["level"];
-                int PlayerId = (int)param["PlayerId"];
-                GameSetting.Instance.target = PlayerId;
-                ShowOp(num, PlayerId, level);
-                otherDeal();
+                int target = (int)param["target"];
+                GameSetting.Instance.target = target;
+                ShowOp(num, target, level);
                 break;
 
             case (int)ActionType.GetPlayerId:
-                GameSetting.Instance.Playerid = (int)param["playerId"];
                 GameSetting.Instance.target = (int)param["target"];
                 GameSetting.Instance.StartNum = (int)param["StartNum"];
-                FlowOfGame.Instance.InitTable();
+                FlowOfGame.Instance.Init();
                 break;
         }
 
         return false;
     }
 
-    /// <summary>
-    /// 检查手牌获取
-    /// </summary>
-    /// <returns></returns>
-    private IEnumerator CheckHandDeal()
-    {
-        yield return new WaitForSeconds(1f);
-        if (MyPlayer.Instance.getSize() == 13)
-        {
-            HandDeal();
-        }
-        else
-        {
-            StartCoroutine(CheckHandDeal());
-        }
-    }
+    #endregion
 }

@@ -7,8 +7,14 @@ public class SceneInRoom : SceneBase {
     Dictionary<int, Text> playersName = new Dictionary<int, Text>();
     Dictionary<int, Image> playersBack = new Dictionary<int, Image>();
 
+    /// <summary>
+    /// 房间名
+    /// </summary>
     private Text roomName;
 
+    /// <summary>
+    /// 背景图
+    /// </summary>
     private Image BgImage;
 
     public override void OnInit()
@@ -28,6 +34,8 @@ public class SceneInRoom : SceneBase {
         roomName = skin.transform.Find("roomName").GetComponent<Text>();
     }
 
+    int playernum = 0;
+
     protected override bool Event(ActionParam param)
     {
         int id = (int)param["ActionType"];
@@ -43,10 +51,10 @@ public class SceneInRoom : SceneBase {
             if (playernum == 4)
             {
                 playernum = 0;
+
                 BgImage.gameObject.SetActive(true);
 
                 ActionParam Param = new ActionParam();
-
                 Param["roomID"] = GameSetting.Instance.roomID;
 
                 WebLogic.Instance.Send((int)ActionType.GameInit, Param);
@@ -57,8 +65,6 @@ public class SceneInRoom : SceneBase {
 
         return false;
     }
-
-    int playernum = 0;
 
     private void UpdateData(int id, string name)
     {
@@ -82,6 +88,5 @@ public class SceneInRoom : SceneBase {
     private void Switch()
     {
         SceneManager.Instance.SceneSwitch(SceneType.Type.Game);
-        SceneMgr.Instance.SceneSwitch(SceneState.SceneGame);
     }
 }

@@ -25,9 +25,9 @@ public class PanelCreateRoom : PanelBase {
             ActionParam param = new ActionParam();
             param["roomID"] = -1;
             param["roomName"] = roomName.text;
-            param["roomOperation"] = 1;
+            param["playerName"] = GameSetting.Instance.PlayerName;
 
-            WebLogic.Instance.Send((int)ActionType.Room, param);
+            WebLogic.Instance.Send((int)ActionType.JoinRoom, param);
         }
         if (BtObject.name.Equals("cancleBt") || BtObject.name.Equals("OtherPanel"))
         {
@@ -42,7 +42,7 @@ public class PanelCreateRoom : PanelBase {
     {
         int id = (int)param["ActionType"];
 
-        if (id == (int)ActionType.Room)
+        if (id == (int)ActionType.JoinRoom)
         {
             int b = -1;
             if ((b = (int)param["success"]) != -1)

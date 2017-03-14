@@ -5,23 +5,20 @@ using System;
 public class Test :MonoBehaviour
 {
 
-    /// <summary>
-    /// 吃碰杠位置
-    /// </summary>
-    private Vector3[] Oppos = new Vector3[4];
-    /// <summary>
-    /// 吃碰杠角度
-    /// </summary>
-    private Vector3[] Oprot = new Vector3[4];
-    /// <summary>
-    /// 吃碰杠修改坐标
-    /// </summary>
-    private Vector3[] OpC = new Vector3[4];
+    Player player = new Player();
 
     void Start()
     {
         SceneMgr.Instance.SceneSwitch(SceneState.SceneGame);
-
+        player.Add(12);
+        player.Add(12);
+        player.Add(13);
+        player.Add(14);
+        player.Add(24);
+        if (player.isTing()) Debug.Log("Ting");
+        if (player.isHu(24)) Debug.Log("Hu");
     }
+
+
 
 }
