@@ -46,13 +46,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Audio\AudioMgr.cs" />
      <Compile Include="Assets\Scripts\Event\EventNode.cs" />
      <Compile Include="Assets\Scripts\Event\IEventListener.cs" />
      <Compile Include="Assets\Scripts\GameMgr\Camera\CameraCore.cs" />
      <Compile Include="Assets\Scripts\GameMgr\GameLogic\Brand.cs" />
      <Compile Include="Assets\Scripts\GameMgr\GameLogic\FlowOfGame.cs" />
      <Compile Include="Assets\Scripts\GameMgr\GameLogic\LogicOfGame.cs" />
+     <Compile Include="Assets\Scripts\GameMgr\GameLogic\Only\AloneLogic.cs" />
+     <Compile Include="Assets\Scripts\GameMgr\GameLogic\Only\Flow.cs" />
      <Compile Include="Assets\Scripts\GameMgr\MouseCotroller\Mouse.cs" />
+     <Compile Include="Assets\Scripts\GameMgr\MouseCotroller\MouseOnly.cs" />
      <Compile Include="Assets\Scripts\GameMgr\Player\MyPlayer.cs" />
      <Compile Include="Assets\Scripts\GameMgr\Player\OtherPlayer.cs" />
      <Compile Include="Assets\Scripts\GameMgr\Player\Player.cs" />

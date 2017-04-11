@@ -49,7 +49,7 @@ public enum ActionType
 
     GameInit = 2007,
 
-    SendGameEndMessage = 2008,
+    getWinName = 2008,
 
     /// <summary>
     /// 玩家id广播

@@ -20,6 +20,11 @@ public class ResourceMgr : MonoBehaviour {
         }
     }
 
+    void Awake()
+    {
+        _Instance = this;
+    }
+
     #endregion
 
     /// <summary>
@@ -84,6 +89,12 @@ public class ResourceMgr : MonoBehaviour {
         mb.transform.localRotation = rot;
         mb.transform.localScale = Vector3.one;
         return gb;
+    }
+
+    public AudioClip CreateSound(string path, bool isCache)
+    {
+        AudioClip ac = LoadResource<AudioClip>(path, true);
+        return Instantiate(ac) as AudioClip;
     }
 
 }

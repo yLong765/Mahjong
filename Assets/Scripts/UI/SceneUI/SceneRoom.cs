@@ -49,6 +49,10 @@ public class SceneRoom : SceneBase {
             WebLogic.Instance.Send((int)ActionType.JoinRoom, param);
 
         }
+        if (BtObject.name.Equals("onlyoneBt"))
+        {
+            SceneManager.Instance.SceneSwitch(SceneType.Type.GameOnly);
+        }
     }
 
     protected override bool Event(ActionParam param)

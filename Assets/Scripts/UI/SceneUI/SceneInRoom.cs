@@ -59,6 +59,8 @@ public class SceneInRoom : SceneBase {
 
                 WebLogic.Instance.Send((int)ActionType.GameInit, Param);
 
+                AudioMgr.Instance.gameStart();
+
                 Invoke("Switch", 2f);
             }
         }

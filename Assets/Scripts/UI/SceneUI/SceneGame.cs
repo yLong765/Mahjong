@@ -10,7 +10,7 @@ public class SceneGame : SceneBase {
     /// <summary>
     /// 初始化按钮位置
     /// </summary>
-    private Vector3 pos = new Vector3(420, -270, 0);
+    private Vector3 pos = new Vector3(420, -250, 0);
 
     /// <summary>
     /// 剩余牌数TextUI
@@ -31,28 +31,52 @@ public class SceneGame : SceneBase {
     protected override void OnInitData()
     {
         BrandNum = skin.transform.Find("BrandNum").GetComponent<Text>();
+        poss[0] = new Vector3(-5, -150, 0);
+        poss[1] = new Vector3(200, 50, 0);
+        poss[2] = new Vector3(-5, 230, 0);
+        poss[3] = new Vector3(-200, 50, 0);
 
+        NoActive();
+    }
+
+    public void NoActive()
+    {
         skin.transform.Find("Guo").gameObject.SetActive(false);
         skin.transform.Find("Chi").gameObject.SetActive(false);
         skin.transform.Find("Peng").gameObject.SetActive(false);
         skin.transform.Find("Gang").gameObject.SetActive(false);
         skin.transform.Find("Ting").gameObject.SetActive(false);
         skin.transform.Find("Hu").gameObject.SetActive(false);
-    }
 
-    private bool GuoShow = true;
+        pos = new Vector3(420, -250, 0);
+    }
 
     public void showButton(string name)
     {
-        if (GuoShow)
-        {
-            skin.transform.Find("Guo").gameObject.SetActive(true);
-            GuoShow = false;
-        }
+        skin.transform.Find("Guo").gameObject.SetActive(true);
+
         pos.x -= 100;
         Transform tf = skin.transform.Find(name);
         tf.gameObject.SetActive(true);
         tf.GetComponent<RectTransform>().localPosition = pos;
+    }
+
+    private Vector3[] poss = new Vector3[4];
+
+    public void showOpB(string name,int id)
+    {
+        Transform tf = skin.transform.Find(name);
+        tf.gameObject.SetActive(true);
+        tf.GetComponent<RectTransform>().localPosition = poss[id];
+        tf.GetComponent<RectTransform>().localScale = Vector3.one * 1.2f;
+        StartCoroutine(Jtime(tf));
+    }
+
+    IEnumerator Jtime(Transform tf)
+    {
+        yield return new WaitForSeconds(1f);
+        tf.GetComponent<RectTransform>().localScale = Vector3.one * 0.7f;
+        tf.gameObject.SetActive(false);
     }
 
     public void ChangePS()
@@ -88,16 +112,7 @@ public class SceneGame : SceneBase {
             LogicOfGame.Instance.RespondOperation(0);
         }
 
-        GuoShow = true;
-
-        pos = new Vector3(420, -270, 0);
-
-        skin.transform.Find("Guo").gameObject.SetActive(false);
-        skin.transform.Find("Chi").gameObject.SetActive(false);
-        skin.transform.Find("Peng").gameObject.SetActive(false);
-        skin.transform.Find("Gang").gameObject.SetActive(false);
-        skin.transform.Find("Ting").gameObject.SetActive(false);
-        skin.transform.Find("Hu").gameObject.SetActive(false);
+        NoActive();
     }
 
 }

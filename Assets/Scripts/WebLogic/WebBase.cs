@@ -15,7 +15,7 @@ public class WebBase : EventNode {
     /// </summary>
     private void Init()
     {
-        NetWriter.SetUrl("127.0.0.1:9001");
+        NetWriter.SetUrl("localhost:9001");
         GameSetting.Instance.CanSend = true;
     }
 

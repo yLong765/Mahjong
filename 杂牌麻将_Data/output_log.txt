@@ -59,23 +59,16 @@ Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Newtonsof
 Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
 Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\protobuf-net.dll (this message is harmless)
 Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\protobuf-net.dll into Unity Child Domain
-- Completed reload, in  0.039 seconds
+- Completed reload, in  0.036 seconds
 Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 1.674210 ms
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+UnloadTime: 1.959951 ms
 <RI> Initialized touch support.
 Initialize engine version: 5.5.2f1 (3829d7f588f3)
 GfxDevice: creating device client; threaded=1
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2f48 -> priority: 1 
-  Thread -> id: 3450 -> priority: 1 
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
     Renderer: NVIDIA GeForce GTX 850M (ID=0x1391)
@@ -101,42 +94,45 @@ Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Newtonsof
 Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
 Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\protobuf-net.dll (this message is harmless)
 Loading D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\protobuf-net.dll into Unity Child Domain
-- Completed reload, in  0.039 seconds
+- Completed reload, in  0.041 seconds
 Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\work\file\ChinaMahjong\杂牌麻将_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 2.303168 ms
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+UnloadTime: 1.979246 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1364 -> priority: 1 
+  Thread -> id: 2428 -> priority: 1 
 <RI> Initialized touch support.
 Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2b68 -> priority: 1 
-  Thread -> id: 20c0 -> priority: 1 
-UnloadTime: 2.040418 ms
+  Thread -> id: 1fe8 -> priority: 1 
+  Thread -> id: 1a50 -> priority: 1 
+UnloadTime: 2.244460 ms
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 38d4 -> priority: 1 
-  Thread -> id: 3868 -> priority: 1 
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-313
+  Thread -> id: 12dc -> priority: 1 
+  Thread -> id: 2e68 -> priority: 1 
+4141
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -152,11 +148,7 @@ Parent of RectTransform is being set with parent property. Consider using the Se
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-313
+4141
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -172,11 +164,7 @@ Parent of RectTransform is being set with parent property. Consider using the Se
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-313
+4141
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -184,34 +172,22 @@ Parent of RectTransform is being set with parent property. Consider using the Se
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 6 Unused Serialized files (Serialized files now loadeU: 0n
-loading 6 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.805770 ms
-UnloadTime: 3.632929 ms
+UnnloadoadingU6nusedsed Serized iiles (dSerieslizSed files nor ialized f)i
+les now loaded: 0)
+UnloadTime: 4.463877 ms
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 765.
-Total: 0.511952 ms (FindLiveObjects: 0.072256 ms CreateObjectMapping: 0.020937 ms MarkObjects: 0.394535 ms  DeleteObjects: 0.023401 ms)
+Total: 0.706140 ms (FindLiveObjects: 0.100584 ms CreateObjectMapping: 0.031201 ms MarkObjects: 0.561217 ms  DeleteObjects: 0.012316 ms)
 
+UnloadTime: 4.205642 ms
+UnloadTime: 3.951924 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 765.
-Total: 0.670423 ms (FindLiveObjects: 0.107973 ms CreateObjectMapping: 0.033254 ms MarkObjects: 0.500867 ms  DeleteObjects: 0U0nloadTms)
-i
-me: 3.431761 ms
-Awake Done
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Awake Done
- 
-(Filename: C:/buildslave/unity/build/artifacts/genertUnloadinge5 /common/runtime/Debugnused As.gen.cpp Linesset)
-
-s to reduce memory usage. Loaded Objects now: 765.
-Total: 0.803029 ms (FindLiveObjects: 0.142870 ms CreateObjectMapping: 0.034075 ms MarkObjects: 0.592829 ms  DeleteObjects: 0.031612 ms)
-
-Awake Done
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+UUnooading 55ununsused Assetstto ro ruce memory usagage L.aded Ob Loadedow: 765c
+tst n: w: 765.
+4 otal: ndLiv7873jmse(cits: v0.076cts: 0.079235 msjectMapping: 0.027pi7 ms 0.MarkObjemcts: r0.4955ts ms  4Del1t9 mjs  Del0te0O1495t ms0.
+0
+11905 ms)
 
 Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
@@ -225,15 +201,14 @@ Parent of RectTransform is being set with parent property. Consider using the Se
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Parent ofPRecrent of forec isT besnform isi bhinpg set wioperty. ent pder usyn. ConsietPar usimng thei SetetdParent tme eothod iitsieanSda, wirth mthe wotrldPoslitionSta ys argument set to falsea. Tn his wclle retainh rlocan woildntorietion oand scale lratwhier tha p weoertlcdmmon UI scali and scasle,
- w
-hich ncme: C:/brevunildslave/un sycaling issuesc.
-/
-geinername: C:m/bui/rslnvt/umniteyugBindinagtifacts/pen Line: 5c1m)
-n
-/runtime/DebugBindings.gen.cpp Line: 51)
-
-Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+PPrareno of arRRtcc oTraf Rsoerct Ts b bisng s ie wbnitsnt gitns prtowithppeatyrty  sroprrnsynde. uo Sesni rer  usingthoe ithod insteme,hohetinstea wowitP tieswiardSmenttiargtoysnt setmTtoisfwtlt e. Taonfa llosce. aTnrisctw tooreeaid  oonaandoricnthteera  han w sncdwo rleh attieona ino as dreenwleiio waai d  anvaltv,onmtoi mI oaca prcaleiigsoisoue 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(
+Fi
+(lnFge: ene:./
+  i
+:/blslaveau /utityldullv/aruifiaacts/gdnartaiefactm/oon//rtetd/mem/DebuugBinming/D.genggcnp.inpsLg nne:
+ Lin
+e
+: 51)
 

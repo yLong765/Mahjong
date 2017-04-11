@@ -14,6 +14,8 @@ public class SceneType : MonoBehaviour {
         /// UI界面
         /// </summary>
         Room,
+
+        GameOnly,
         
     }
 

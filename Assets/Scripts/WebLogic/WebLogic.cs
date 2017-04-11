@@ -70,6 +70,10 @@ public class WebLogic : WebBase {
                 Param["target"] = actionResult.Get<int>("target");
                 Param["StartNum"] = actionResult.Get<int>("StartNum");
                 break;
+
+            case (int)ActionType.getWinName:
+                Param["WinName"] = actionResult.Get<string>("WinName");
+                break;
         }
 
         if (actionID == 2001 || actionID == 2004) SendEvnet(EventCode.WebToLogic, Param);

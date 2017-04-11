@@ -32,6 +32,10 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
 
     #region 数据定义
 
+    private GameObject tag;
+
+    private bool Ting = false;
+
     private Player[] players = new Player[4];
 
     /// <summary>
@@ -58,7 +62,7 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
     private Vector3[] showC = new Vector3[4];
     private Vector3[] showCC = new Vector3[4];
     private Vector3[] showLastP = new Vector3[4];
-    private int[] showTime = new int[4];
+    private int[] showTime = new int[4] { 0, 0, 0, 0 };
 
     /// <summary>
     /// 发牌位置
@@ -83,6 +87,8 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
     /// </summary>
     public void InitDate()
     {
+        tag = GameObject.Find("tag");
+
         players[0] = new Player();
         players[1] = new Player();
         players[2] = new Player();
@@ -347,12 +353,30 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
 
         if (playerId == GameSetting.Instance.Playerid)
         {
-            if (players[0].isTing())
-                SceneGame.Instance.showButton("Ting");
-            if (players[0].isHu(mBrand.id))
-                SceneGame.Instance.showButton("Hu");
+            if (!Ting)
+            {
+                if (players[0].isTing())
+                    SceneGame.Instance.showButton("Ting");
+                if (players[0].isHu(mBrand.id))
+                    SceneGame.Instance.showButton("Hu");
+            }
+            else
+            {
+                StartCoroutine(Jtime(mBrand));
+            }
         }
 
+    }
+
+    /// <summary>
+    /// 听牌延时出牌
+    /// </summary>
+    /// <param name="mBrand"></param>
+    /// <returns></returns>
+    IEnumerator Jtime(Brand mBrand)
+    {
+        yield return new WaitForSeconds(1f);
+        ShowBrand(mBrand);
     }
 
     /// <summary>
@@ -420,7 +444,8 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
         {
             if (GameSetting.Instance.target == GameSetting.Instance.Playerid)
             {
-                ShowBrand(mBrand);
+                if (!Ting)
+                    ShowBrand(mBrand);
             }
             else
             {
@@ -469,6 +494,8 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
 
         LastBrand = null;
 
+        SceneGame.Instance.NoActive();
+
         RespondOperation(0);
     }
 
@@ -485,8 +512,6 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
         return k;
     }
 
-    private bool lll = true;
-
     /// <summary>
     /// 其他玩家出牌展示
     /// </summary>
@@ -497,7 +522,11 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
         int id = ChangePlayerId(playerid);
 
         GameObject g = ResourceMgr.Instance.CreateBrand("Mahjong/mj" + num, showPos[id], Quaternion.Euler(Oprot[id]));
-        
+
+        AudioMgr.Instance.showAudio(num);
+
+        tag.transform.position = g.transform.position + Vector3.up;
+
         showLastP[id] = showPos[id];
         showPos[id] += showC[id];
         showTime[id]++;
@@ -537,25 +566,28 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
             Guo = false;
             SceneGame.Instance.showButton("Hu");
         }
-        if (players[0].isGang(num))
+        if (!Ting)
         {
-            Guo = false;
-            SceneGame.Instance.showButton("Gang");
-        }
-        if (players[0].isPeng(num))
-        {
-            Guo = false;
-            SceneGame.Instance.showButton("Peng");
-        }
-        if (players[0].isChi(num))
-        {
-            int o = GameSetting.Instance.Playerid - GameSetting.Instance.target;
-            if (o == 1 || o == -3)
+            if (players[0].isGang(num))
             {
                 Guo = false;
-                SceneGame.Instance.showButton("Chi");
+                SceneGame.Instance.showButton("Gang");
             }
-        }
+            if (players[0].isPeng(num))
+            {
+                Guo = false;
+                SceneGame.Instance.showButton("Peng");
+            }
+            if (players[0].isChi(num))
+            {
+                int o = GameSetting.Instance.Playerid - GameSetting.Instance.target;
+                if (o == 1 || o == -3)
+                {
+                    Guo = false;
+                    SceneGame.Instance.showButton("Chi");
+                }
+            }
+        }        
 
         if (Guo)
         {
@@ -572,6 +604,10 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
     public void ShowOp(int num, int target, int level)
     {
         int id = ChangePlayerId(target);
+
+        AudioMgr.Instance.opSound(level);
+
+        if (level > 0) tag.transform.position = new Vector3(0, -1, 0);
 
         switch (level)
         {
@@ -606,19 +642,30 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
             Oppos[id] += OpCC[id];
             GameObject.Destroy(LastShowBrand);
             showPos[LastShowMan] = showLastP[LastShowMan];
+            showTime[LastShowMan]--;
         }
 
         if (GameSetting.Instance.Playerid == GameSetting.Instance.target)
         {
             OpAnims(level);
-            if (players[0].isTing())
+            if (level == 0 || level == 3)
+            {
+                FlowOfGame.Instance.Deal = true;
+            }
+            else if (players[0].isTing())
+            {
                 SceneGame.Instance.showButton("Ting");
-            if (level == 0 || level == 3) FlowOfGame.Instance.Deal = true;
+            }
         }
         else
         {
             players[id].webRemoveOperator(level);
-            if (level == 0 || level == 3) Deal(GameSetting.Instance.target);
+            if (level == 0 || level == 3)
+            {
+                players[id].Add(36);
+                Deal(GameSetting.Instance.target);
+            }
+                
         }
 
     }
@@ -772,12 +819,27 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
 
         Vector3 pos = new Vector3(-3.45f, 0.5f, -3.4f);
 
-        for (int i = 0; i < players[0].getSize(); i++)
+        for (int i = 0; i < players[0].getSize() - 1; i++)
         {
             Brand br = players[0].Get(i);
             pos.x += 0.45f;
             br.setPos(pos);
         }
+
+        if (level == 0)
+        {
+            Brand b = players[0].GetEnd();
+            pos.x += 0.45f;
+            b.setPos(pos);
+        }
+        else
+        {
+            Brand b = players[0].GetEnd();
+            pos.x += 0.55f;
+            b.setPos(pos);
+        }
+
+
 
     }
 
@@ -821,8 +883,10 @@ public class LogicOfGame : MonoBehaviour, IEventListener {
                         players[0].Get(i).moveDown();
                     }
 
+                    Ting = true;
                     ShowBrand(mbrand);
                     Mouse.Instance.Ting= false;
+                    AudioMgr.Instance.opSound(4);
                 }
             }
         }

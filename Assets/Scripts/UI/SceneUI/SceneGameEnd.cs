@@ -19,6 +19,12 @@ public class SceneGameEnd : SceneBase {
     {
         WinName = skin.transform.Find("WinName").GetComponent<Text>();
         WinNum = skin.transform.Find("WinNum").GetComponent<Text>();
+
+        ActionParam param = new ActionParam();
+        param["roomID"] = GameSetting.Instance.roomID;
+
+        WebLogic.Instance.Send((int)ActionType.getWinName, param);
+
     }
 
     protected override void onClick(GameObject BtObject)
@@ -33,9 +39,9 @@ public class SceneGameEnd : SceneBase {
     {
         int id = (int)param["ActionType"];
 
-        if (id == (int)ActionType.GameEnd)
+        if (id == (int)ActionType.getWinName)
         {
-            WinName.text = (string)param["playerName"];
+            WinName.text = (string)param["WinName"];
             WinNum.text = "1";
         }
 

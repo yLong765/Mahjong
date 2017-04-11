@@ -7,9 +7,9 @@ class Action2008 : BaseAction
 {
     private ActionResult actionResult = new ActionResult();
 
-    public Action2008() : base((int)ActionType.SendGameEndMessage)
+    public Action2008() : base((int)ActionType.getWinName)
     {
-        actionResult["ActionType"] = (int)ActionType.SendGameEndMessage;
+        actionResult["ActionType"] = (int)ActionType.getWinName;
     }
 
     public override ActionResult GetResponseData()
@@ -19,13 +19,12 @@ class Action2008 : BaseAction
 
     protected override void DecodePackage(NetReader reader)
     {
-        
+        actionResult["WinName"] = reader.readString();
     }
 
     protected override void SendParameter(NetWriter writer, ActionParam actionParam)
     {
-        writer.writeInt32("roomID", (int)actionResult["roomID"]);
-        writer.writeString("playerName", (string)actionResult["playerName"]);
+        writer.writeInt32("roomID", (int)actionParam["roomID"]);
     }
 }
 
