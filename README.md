@@ -1,2 +1,2 @@
 # Mahjong
-a simple Mahjong Game with Unity3d
+Simple mahjong game made by Unity
